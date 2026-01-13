@@ -578,6 +578,148 @@ flowchart LR
 layout: center
 ---
 
+<div class="max-w-4xl mx-auto">
+
+<div class="text-center mb-6">
+  <div i-carbon:data-share class="text-5xl text-amber-500" />
+</div>
+
+# The Data Sharing Problem
+
+<div class="grid grid-cols-2 gap-6 mt-6">
+
+<div class="rounded-xl border-2 p-5 border-blue-300 bg-blue-50">
+  <div class="font-bold text-lg mb-3 text-blue-600 flex items-center gap-2">
+    <div i-carbon:cloud-services class="text-2xl" />
+    What Big Tech Solved
+  </div>
+  <div class="space-y-2 text-sm text-gray-600">
+    <div class="flex items-center gap-2">
+      <div i-carbon:checkmark class="text-blue-500" />
+      <span>Scalable object storage (S3, GCS, Azure)</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div i-carbon:checkmark class="text-blue-500" />
+      <span>Open table formats (Apache Iceberg, DuckLake)</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div i-carbon:checkmark class="text-blue-500" />
+      <span>Serverless query engines (DuckDB, Athena)</span>
+    </div>
+  </div>
+</div>
+
+<div class="rounded-xl border-2 p-5 border-red-300 bg-red-50">
+  <div class="font-bold text-lg mb-3 text-red-600 flex items-center gap-2">
+    <div i-carbon:help class="text-2xl" />
+    What's Still Missing
+  </div>
+  <div class="space-y-2 text-sm text-gray-600">
+    <div class="flex items-center gap-2">
+      <div i-carbon:close class="text-red-400" />
+      <span>Open, collaborative pipeline design</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div i-carbon:close class="text-red-400" />
+      <span>Simple way to contribute & maintain</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div i-carbon:close class="text-red-400" />
+      <span>No duplication across organizations</span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div class="mt-6 text-center p-4 rounded-lg bg-gray-100">
+  <div class="text-gray-600">
+    Every business builds their own infra to aggregate the <strong>same</strong> public datasets.
+  </div>
+  <div class="mt-2 text-lg font-semibold" style="color: hsl(37 91% 55%)">
+    What if there was a Homebrew for public data pipelines?
+  </div>
+</div>
+
+</div>
+
+---
+layout: center
+---
+
+<div class="max-w-4xl mx-auto">
+
+<div class="text-center mb-4">
+  <div i-carbon:data-refinery class="text-5xl text-green-500" />
+</div>
+
+# Walkthru Data
+
+<div class="text-center text-lg text-gray-600 mb-4">
+  A <strong>conda-forge style registry</strong> for public data pipelines
+</div>
+
+<div class="grid grid-cols-3 gap-3">
+
+<div class="rounded-lg border-2 p-3 border-green-400 bg-green-50 text-center">
+  <div i-carbon:code-branch class="text-2xl text-green-500 mx-auto" />
+  <div class="mt-1 font-semibold text-sm text-green-700">Git-Based</div>
+  <div class="text-xs text-gray-500">PR workflow for governance</div>
+</div>
+
+<div class="rounded-lg border-2 p-3 border-amber-400 bg-amber-50 text-center">
+  <div i-carbon:terminal class="text-2xl text-amber-500 mx-auto" />
+  <div class="mt-1 font-semibold text-sm text-amber-700">Simple SQL</div>
+  <div class="text-xs text-gray-500">DuckDB + DuckLake</div>
+</div>
+
+<div class="rounded-lg border-2 p-3 border-blue-400 bg-blue-50 text-center">
+  <div i-carbon:money class="text-2xl text-blue-500 mx-auto" />
+  <div class="mt-1 font-semibold text-sm text-blue-700">98% Cheaper</div>
+  <div class="text-xs text-gray-500">Ephemeral runners</div>
+</div>
+
+</div>
+
+<div class="mt-4 p-4 rounded-xl border-2 border-amber-400 bg-amber-50">
+  <div class="flex items-start gap-3">
+    <div i-carbon:construction class="text-3xl text-amber-500 flex-shrink-0" />
+    <div>
+      <div class="font-bold text-amber-700">Work in Progress — We Need Help</div>
+      <div class="text-sm text-gray-600 mt-1">
+        This is a <strong>hard infrastructure challenge</strong> that requires significant effort.
+        It's currently blocking our <strong>50+ Hormones & Cities indices</strong> from going live.
+      </div>
+      <div class="text-xs text-gray-500 mt-2 flex items-center gap-1">
+        <div i-carbon:time class="text-amber-500" />
+        Looking for contributors, sponsors, and partners
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mt-3">
+
+```mermaid {scale: 0.5}
+flowchart LR
+    A[fa:fa-users Community] -->|Submit PR| B[fa:fa-code-branch GitHub]
+    B -->|CI Validates| C[fa:fa-server Hetzner Runner]
+    C -->|DuckDB SQL| D[fa:fa-database DuckLake]
+    D -->|Open Format| E[fa:fa-cloud S3 / source.coop]
+    E -->|Query| F[fa:fa-globe Anyone]
+    style A fill:#d1fae5,stroke:#059669
+    style E fill:#e0e7ff,stroke:#6366f1
+    style F fill:#fef3c7,stroke:#d97706
+```
+
+</div>
+
+</div>
+
+---
+layout: center
+---
+
 <div class="text-center">
 
 <img src="/icon.svg" class="h-24 mx-auto mb-6" />
