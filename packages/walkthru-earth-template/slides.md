@@ -297,6 +297,16 @@ flowchart TB
   </div>
 </div>
 
+<a href="https://source.coop/walkthru-earth" target="_blank" class="rounded-xl border-2 p-4 backdrop-blur bg-opacity-10 border-purple-500 bg-purple-50 block no-underline text-inherit hover:bg-purple-100 transition-all">
+  <div class="flex items-center gap-4 mb-2">
+    <img src="https://walkthru.earth/source-coop-logo.png" class="h-6 w-6" alt="Source Cooperative" />
+    <div class="font-bold text-lg text-purple-700">Open Data</div>
+  </div>
+  <div class="text-sm text-gray-600">
+    All datasets available on <strong>Source Cooperative</strong> — a non-profit data sharing platform for the public good.
+  </div>
+</a>
+
 <div class="rounded-xl border-2 p-4 backdrop-blur bg-opacity-10 border-amber-500 bg-amber-50">
   <div class="flex items-center gap-4 mb-2">
     <div i-carbon:globe class="text-2xl text-amber-500"/>
