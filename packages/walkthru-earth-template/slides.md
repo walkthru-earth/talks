@@ -135,6 +135,50 @@ Chronic noise and pollution keep our **cortisol levels high** and our nervous sy
 layout: center
 ---
 
+<div class="max-w-3xl mx-auto">
+
+<div class="text-center mb-8">
+  <div i-carbon:idea class="text-6xl text-amber-500" />
+</div>
+
+# The Analogy
+
+<div class="mt-8 rounded-xl border-2 p-8 backdrop-blur bg-opacity-10 border-green-500 bg-green-50">
+
+<div class="text-xl text-gray-700 leading-relaxed">
+
+Today, cities only check their **"bank balance" (GDP)** to see if they are doing well.
+
+</div>
+
+<div class="mt-6 flex items-center justify-center gap-6">
+  <div class="text-center">
+    <div i-carbon:currency-dollar class="text-5xl text-gray-400" />
+    <div class="text-sm mt-2 text-gray-500">GDP Only</div>
+  </div>
+  <div i-carbon:arrow-right class="text-3xl text-green-500" />
+  <div class="text-center">
+    <div i-carbon:activity class="text-5xl text-green-500" />
+    <div class="text-sm mt-2 text-green-600 font-medium">Full Health</div>
+  </div>
+</div>
+
+<div class="mt-6 text-xl text-center font-semibold" style="color: hsl(158 64% 52%)">
+Walkthru.earth is like a fitness tracker for the whole city.
+</div>
+
+<div class="mt-4 text-gray-600 text-center">
+We allow a city to finally check its <strong>"heart rate"</strong> and <strong>"stress levels"</strong> so it can actually help the people inside it get healthy.
+</div>
+
+</div>
+
+</div>
+
+---
+layout: center
+---
+
 <div class="text-center max-w-3xl mx-auto">
 
 # Making the Invisible Visible
@@ -271,6 +315,71 @@ flowchart TB
 
 ---
 
+# Privacy by Design
+
+<div class="mt-4 px-8">
+
+<div class="text-xl text-gray-700 leading-relaxed mb-6">
+Your data helps cities improve. Your <strong>identity</strong> stays yours.
+</div>
+
+<div class="grid grid-cols-2 gap-8">
+
+<div class="space-y-4">
+
+<div class="rounded-xl border-2 p-4 backdrop-blur bg-opacity-10 border-blue-500 bg-blue-50">
+  <div class="flex items-center gap-4 mb-2">
+    <div i-carbon:user-avatar class="text-2xl text-blue-500"/>
+    <div class="font-bold text-lg">Anonymous Upload</div>
+  </div>
+  <div class="text-sm text-gray-600">
+    Survey responses are <strong>completely anonymous</strong>. No account required, no personal data stored.
+  </div>
+</div>
+
+<div class="rounded-xl border-2 p-4 backdrop-blur bg-opacity-10 border-purple-500 bg-purple-50">
+  <div class="flex items-center gap-4 mb-2">
+    <div i-carbon:location class="text-2xl text-purple-500"/>
+    <div class="font-bold text-lg">H3 Spatial Aggregation</div>
+  </div>
+  <div class="text-sm text-gray-600">
+    Location data is aggregated into <strong>H3 hexagonal cells</strong>. We measure neighborhoods, not individuals.
+  </div>
+</div>
+
+<div class="rounded-xl border-2 p-4 backdrop-blur bg-opacity-10 border-green-500 bg-green-50">
+  <div class="flex items-center gap-4 mb-2">
+    <div i-carbon:locked class="text-2xl text-green-500"/>
+    <div class="font-bold text-lg">No Tracking</div>
+  </div>
+  <div class="text-sm text-gray-600">
+    No cookies, no fingerprinting, no behavioral tracking. Just <strong>honest urban data</strong>.
+  </div>
+</div>
+
+</div>
+
+<div class="flex items-center justify-center">
+
+```mermaid {scale: 0.65}
+flowchart TB
+    A[Your Response] --> B[Remove Identity]
+    B --> C[H3 Hexagon Cell]
+    C --> D[Aggregated Insights]
+    style A fill:#fef3c7,stroke:#d97706
+    style B fill:#e0e7ff,stroke:#6366f1
+    style C fill:#f3e8ff,stroke:#9333ea
+    style D fill:#d1fae5,stroke:#059669
+```
+
+</div>
+
+</div>
+
+</div>
+
+---
+
 # Who We Help
 
 <div class="text-lg text-gray-600 mb-6 text-center">
@@ -366,6 +475,101 @@ Real-time environmental sensing network
   <a href="https://opensensor.space" target="_blank" class="text-green-600 underline text-sm">
     Open in new tab <span i-carbon:launch class="inline-block ml-1" />
   </a>
+</div>
+
+</div>
+
+---
+
+# Why Cloud-Native?
+
+<div class="mt-2 px-6">
+
+<div class="text-lg text-gray-700 mb-4">
+Traditional IoT vs. Our Approach
+</div>
+
+<div class="grid grid-cols-2 gap-6">
+
+<div class="rounded-xl border-2 p-4 border-red-300 bg-red-50">
+  <div class="font-bold text-lg mb-3 text-red-600">Traditional IoT Stack</div>
+  <div class="space-y-2 text-sm text-gray-600">
+    <div class="flex items-center gap-2">
+      <div i-carbon:close class="text-red-400" />
+      <span>MQTT brokers</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div i-carbon:close class="text-red-400" />
+      <span>Database servers (InfluxDB, TimescaleDB)</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div i-carbon:close class="text-red-400" />
+      <span>Backend APIs</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div i-carbon:close class="text-red-400" />
+      <span>Data loss during outages</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div i-carbon:close class="text-red-400" />
+      <span>High energy consumption</span>
+    </div>
+  </div>
+</div>
+
+<div class="rounded-xl border-2 p-4 border-green-400 bg-green-50">
+  <div class="font-bold text-lg mb-3 text-green-600">OpenSensor.Space</div>
+  <div class="space-y-2 text-sm text-gray-600">
+    <div class="flex items-center gap-2">
+      <div i-carbon:checkmark class="text-green-500" />
+      <span>Edge → Object Storage (S3)</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div i-carbon:checkmark class="text-green-500" />
+      <span>No databases required</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div i-carbon:checkmark class="text-green-500" />
+      <span>Parquet format (query anywhere)</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div i-carbon:checkmark class="text-green-500" />
+      <span>Offline-first (zero data loss)</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div i-carbon:checkmark class="text-green-500" />
+      <span>60-90% less energy</span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div class="mt-4">
+
+```mermaid {scale: 0.55}
+flowchart LR
+    subgraph Edge["Edge Device (Raspberry Pi)"]
+        S[Sensors] --> C[Collector]
+        C --> P[Parquet Files]
+    end
+    subgraph Cloud["Cloud Storage"]
+        P -->|Auto-sync| O[Object Storage]
+    end
+    subgraph Analytics["Browser Analytics"]
+        O --> D[DuckDB-WASM]
+        D --> V[Visualization]
+    end
+    style S fill:#e0f2f1,stroke:#2f7f7a
+    style P fill:#fef3c7,stroke:#d97706
+    style O fill:#e0e7ff,stroke:#6366f1
+    style V fill:#d1fae5,stroke:#059669
+```
+
+</div>
+
+<div class="text-center text-sm text-gray-500 mt-2">
+  <strong>The insight:</strong> Why use extra servers when the Pi already has WiFi?
 </div>
 
 </div>
