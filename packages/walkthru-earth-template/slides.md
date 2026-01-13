@@ -421,38 +421,6 @@ We turn data into <strong>actionable insights</strong> for everyone
 </div>
 
 ---
-layout: center
----
-
-<div class="text-center max-w-3xl mx-auto">
-
-# Our 10-Year Dream
-
-<div class="mt-6 text-2xl font-semibold" style="color: hsl(158 64% 52%)">
-"We are teaching capitalism to care about nervous systems."
-</div>
-
-<div class="mt-12 grid grid-cols-2 gap-8">
-
-<div class="rounded-xl border-2 p-6 backdrop-blur bg-opacity-15 border-green-500 bg-green-500">
-  <div class="text-5xl font-bold" style="color: hsl(158 64% 42%)">100,000+</div>
-  <div class="mt-2 text-gray-600">Sensor stations by 2036</div>
-</div>
-
-<div class="rounded-xl border-2 p-6 backdrop-blur bg-opacity-15 border-amber-500 bg-amber-500">
-  <div class="text-5xl font-bold text-amber-600">Global</div>
-  <div class="mt-2 text-gray-600">Standard for urban success</div>
-</div>
-
-</div>
-
-<div class="mt-12 text-xl text-gray-700">
-Measuring success not just by <strong>wealth</strong>, but by <strong>human flourishing</strong>
-</div>
-
-</div>
-
----
 
 # OpenSensor.Space Live
 
