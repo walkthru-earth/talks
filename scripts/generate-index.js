@@ -198,7 +198,7 @@ async function main() {
         if (fs.existsSync(pkgJsonPath)) {
             const pkg = JSON.parse(fs.readFileSync(pkgJsonPath, 'utf-8'));
             // Assuming base path follows the pattern /talks/<pkgName>/
-            const url = `/talks/${pkgName}/`;
+            const url = `./${pkgName}/`;
             
             // Format title: "walkthru-earth-template" -> "Walkthru Earth Template"
             const title = pkgName
@@ -220,6 +220,7 @@ async function main() {
     const html = HTML_TEMPLATE(links);
     fs.writeFileSync(path.join(DIST_DIR, 'index.html'), html);
     console.log(`Generated dist/index.html with ${links.length} presentations.`);
+    console.log('To test locally: npx serve dist');
 }
 
 main().catch(console.error);
