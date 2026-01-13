@@ -592,7 +592,7 @@ layout: center
 </a>
 
 <a href="https://source.coop/walkthru-earth" target="_blank" class="rounded-lg border-2 p-4 backdrop-blur bg-opacity-10 border-amber-500 bg-amber-50 no-underline text-inherit hover:bg-amber-100 transition-all block">
-  <div i-carbon:data-base class="text-3xl text-amber-500 mx-auto" />
+  <img src="https://walkthru.earth/source-coop-logo.png" class="h-8 w-8 mx-auto" alt="Source Cooperative" />
   <div class="mt-2 text-sm font-medium">Access Our Data</div>
 </a>
 
@@ -608,6 +608,33 @@ layout: center
   <div class="text-gray-500">
     <a href="mailto:hi@walkthru.earth" class="text-gray-500 no-underline hover:underline">hi@walkthru.earth</a>
   </div>
+</div>
+
+<div class="mt-6 flex flex-wrap justify-center items-center gap-3">
+  <a href="https://www.linkedin.com/company/walkthru-earth/" target="_blank" class="text-gray-400 hover:text-blue-600 transition-colors" title="LinkedIn">
+    <div i-carbon:logo-linkedin class="text-2xl" />
+  </a>
+  <a href="https://www.youtube.com/@walkthru-earth/" target="_blank" class="text-gray-400 hover:text-red-500 transition-colors" title="YouTube">
+    <div i-carbon:logo-youtube class="text-2xl" />
+  </a>
+  <a href="https://www.instagram.com/walkthru.earth" target="_blank" class="text-gray-400 hover:text-pink-500 transition-colors" title="Instagram">
+    <div i-carbon:logo-instagram class="text-2xl" />
+  </a>
+  <a href="https://www.tiktok.com/@walkthru.earth" target="_blank" class="text-gray-400 hover:text-gray-800 transition-colors" title="TikTok">
+    <div i-simple-icons:tiktok class="text-xl" />
+  </a>
+  <a href="https://www.facebook.com/walkthru.earth" target="_blank" class="text-gray-400 hover:text-blue-500 transition-colors" title="Facebook">
+    <div i-carbon:logo-facebook class="text-2xl" />
+  </a>
+  <a href="https://x.com/walkthru_earth" target="_blank" class="text-gray-400 hover:text-gray-800 transition-colors" title="X">
+    <div i-carbon:logo-x class="text-2xl" />
+  </a>
+  <a href="https://bsky.app/profile/walkthru.earth" target="_blank" class="text-gray-400 hover:text-blue-400 transition-colors" title="Bluesky">
+    <div i-simple-icons:bluesky class="text-xl" />
+  </a>
+  <a href="https://source.coop/walkthru-earth" target="_blank" class="opacity-60 hover:opacity-100 transition-opacity" title="Source Cooperative">
+    <img src="https://walkthru.earth/source-coop-logo.png" class="h-6 w-6" alt="Source Cooperative" />
+  </a>
 </div>
 
 </div>
