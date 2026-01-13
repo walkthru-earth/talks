@@ -1,0 +1,26 @@
+/* Font imports */
+@import url('/fonts/fonts.css');
+
+:root {
+  --slidev-code-padding: 8px 10px;
+  
+  /* WalkThru Earth Brand Colors (matches globals.css) */
+  --primary: hsl(158 64% 52%);
+  --secondary: hsl(37 91% 55%);
+}
+
+/* Transitions */
+.slidev-vclick-target {
+  transition: opacity 500ms ease, filter 200ms ease, color 300ms ease;
+}
+
+.slidev-vclick-hidden {
+  opacity: 0;
+  pointer-events: none;
+  filter: blur(3px);
+}
+
+.slidev-code {
+  backdrop-filter: blur(10px);
+  border: 1px solid #eee1;
+}
