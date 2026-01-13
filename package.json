@@ -7,8 +7,9 @@
   "description": "WalkThru Earth Presentations",
   "scripts": {
     "cleanup:dist": "rimraf --glob dist",
-    "packages:build": "pnpm cleanup:dist && pnpm -r --filter=./packages/* run build",
-    "packages:build-base": "pnpm cleanup:dist && pnpm -r --filter=./packages/* run build-base"
+    "build:index": "node scripts/generate-index.js",
+    "packages:build": "pnpm cleanup:dist && pnpm -r --filter=./packages/* run build && pnpm build:index",
+    "packages:build-base": "pnpm cleanup:dist && pnpm -r --filter=./packages/* run build-base && pnpm build:index"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^7.0.0",
