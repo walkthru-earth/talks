@@ -29,10 +29,10 @@ Revealing the hidden patterns of daily life
 </div>
 
 <div class="mt-12 flex justify-center gap-4">
-  <a href="https://walkthru.earth" target="_blank" class="rounded-full px-6 py-2 text-white text-sm font-medium no-underline" style="background: hsl(158 64% 52%)">
+  <a href="https://walkthru.earth" target="_blank" class="btn btn-primary btn-pill btn-sm">
     Visit Website
   </a>
-  <a href="https://opensensor.space" target="_blank" class="rounded-full px-6 py-2 border-2 text-sm font-medium no-underline" style="border-color: hsl(158 64% 52%); color: hsl(158 64% 52%)">
+  <a href="https://opensensor.space" target="_blank" class="btn btn-outline btn-pill btn-sm">
     OpenSensor.Space
   </a>
 </div>
@@ -193,17 +193,17 @@ Our mission is simple:
 
 <div class="mt-12 grid grid-cols-3 gap-6">
 
-<div class="rounded-lg border-2 p-4 backdrop-blur bg-opacity-10 border-blue-400 bg-blue-50">
+<div class="rounded-lg border-2 border-solid p-4 backdrop-blur bg-opacity-10 border-blue-400 bg-blue-50">
   <div i-carbon:wind-stream class="text-4xl text-blue-500 mx-auto" />
   <div class="mt-2 text-sm font-medium">Air Quality</div>
 </div>
 
-<div class="rounded-lg border-2 p-4 backdrop-blur bg-opacity-10 border-purple-400 bg-purple-50">
+<div class="rounded-lg border-2 border-solid p-4 backdrop-blur bg-opacity-10 border-purple-400 bg-purple-50">
   <div i-carbon:volume-up class="text-4xl text-purple-500 mx-auto" />
   <div class="mt-2 text-sm font-medium">Noise > 65dB</div>
 </div>
 
-<div class="rounded-lg border-2 p-4 backdrop-blur bg-opacity-10 border-green-400 bg-green-50">
+<div class="rounded-lg border-2 border-solid p-4 backdrop-blur bg-opacity-10 border-green-400 bg-green-50">
   <div i-carbon:tree class="text-4xl text-green-500 mx-auto" />
   <div class="mt-2 text-sm font-medium">Green Space</div>
 </div>
@@ -226,7 +226,7 @@ We've built an infrastructure for <strong>human-centered development</strong> us
 
 <div class="grid grid-cols-3 gap-6 px-4">
 
-<a href="https://opensensor.space" target="_blank" class="rounded-xl border-2 p-6 backdrop-blur bg-opacity-10 border-green-500 bg-green-500 h-full no-underline text-inherit hover:scale-105 transition-transform">
+<div class="rounded-xl border-2 border-solid p-6 backdrop-blur bg-opacity-10 border-green-500 bg-green-500 h-full">
   <div class="flex justify-center mb-4">
     <div i-carbon:iot-platform class="text-6xl text-green-600"/>
   </div>
@@ -234,9 +234,9 @@ We've built an infrastructure for <strong>human-centered development</strong> us
   <div class="text-center text-sm text-gray-600">
     A network of DIY stations providing <strong>real-time data</strong> on air, noise, and light
   </div>
-</a>
+</div>
 
-<div class="rounded-xl border-2 p-6 backdrop-blur bg-opacity-10 border-amber-500 bg-amber-500 h-full">
+<div class="rounded-xl border-2 border-solid p-6 backdrop-blur bg-opacity-10 border-amber-500 bg-amber-500 h-full">
   <div class="flex justify-center mb-4">
     <div i-carbon:chart-radar class="text-6xl text-amber-600"/>
   </div>
@@ -246,7 +246,7 @@ We've built an infrastructure for <strong>human-centered development</strong> us
   </div>
 </div>
 
-<div class="rounded-xl border-2 p-6 backdrop-blur bg-opacity-10 border-rose-400 bg-rose-400 h-full">
+<div class="rounded-xl border-2 border-solid p-6 backdrop-blur bg-opacity-10 border-rose-400 bg-rose-400 h-full">
   <div class="flex justify-center mb-4">
     <div i-carbon:face-satisfied class="text-6xl text-rose-500"/>
   </div>
@@ -287,7 +287,7 @@ flowchart TB
 
 <div class="col-span-2 space-y-4">
 
-<div class="rounded-xl border-2 p-4 backdrop-blur bg-opacity-10 border-green-500 bg-green-50">
+<div class="rounded-xl border-2 border-solid p-4 backdrop-blur bg-opacity-10 border-green-500 bg-green-50">
   <div class="flex items-center gap-4 mb-2">
     <div i-carbon:checkmark-filled class="text-2xl text-green-500"/>
     <div class="font-bold text-lg">Trust</div>
@@ -297,7 +297,7 @@ flowchart TB
   </div>
 </div>
 
-<a href="https://source.coop/walkthru-earth" target="_blank" class="rounded-xl border-2 p-4 backdrop-blur bg-opacity-10 border-purple-500 bg-purple-50 block no-underline text-inherit hover:bg-purple-100 transition-all">
+<div class="rounded-xl border-2 border-solid p-4 backdrop-blur bg-opacity-10 border-purple-500 bg-purple-50">
   <div class="flex items-center gap-4 mb-2">
     <img src="https://walkthru.earth/source-coop-logo.png" class="h-6 w-6" alt="Source Cooperative" />
     <div class="font-bold text-lg text-purple-700">Open Data</div>
@@ -305,9 +305,9 @@ flowchart TB
   <div class="text-sm text-gray-600">
     All datasets available on <strong>Source Cooperative</strong> — a non-profit data sharing platform for the public good.
   </div>
-</a>
+</div>
 
-<div class="rounded-xl border-2 p-4 backdrop-blur bg-opacity-10 border-amber-500 bg-amber-50">
+<div class="rounded-xl border-2 border-solid p-4 backdrop-blur bg-opacity-10 border-amber-500 bg-amber-50">
   <div class="flex items-center gap-4 mb-2">
     <div i-carbon:globe class="text-2xl text-amber-500"/>
     <div class="font-bold text-lg">Equity</div>
@@ -337,7 +337,7 @@ Your data helps cities improve. Your <strong>identity</strong> stays yours.
 
 <div class="space-y-4">
 
-<div class="rounded-xl border-2 p-4 backdrop-blur bg-opacity-10 border-blue-500 bg-blue-50">
+<div class="rounded-xl border-2 border-solid p-4 backdrop-blur bg-opacity-10 border-blue-500 bg-blue-50">
   <div class="flex items-center gap-4 mb-2">
     <div i-carbon:user-avatar class="text-2xl text-blue-500"/>
     <div class="font-bold text-lg">Anonymous Upload</div>
@@ -347,7 +347,7 @@ Your data helps cities improve. Your <strong>identity</strong> stays yours.
   </div>
 </div>
 
-<div class="rounded-xl border-2 p-4 backdrop-blur bg-opacity-10 border-purple-500 bg-purple-50">
+<div class="rounded-xl border-2 border-solid p-4 backdrop-blur bg-opacity-10 border-purple-500 bg-purple-50">
   <div class="flex items-center gap-4 mb-2">
     <div i-carbon:location class="text-2xl text-purple-500"/>
     <div class="font-bold text-lg">H3 Spatial Aggregation</div>
@@ -357,7 +357,7 @@ Your data helps cities improve. Your <strong>identity</strong> stays yours.
   </div>
 </div>
 
-<div class="rounded-xl border-2 p-4 backdrop-blur bg-opacity-10 border-green-500 bg-green-50">
+<div class="rounded-xl border-2 border-solid p-4 backdrop-blur bg-opacity-10 border-green-500 bg-green-50">
   <div class="flex items-center gap-4 mb-2">
     <div i-carbon:locked class="text-2xl text-green-500"/>
     <div class="font-bold text-lg">No Tracking</div>
@@ -450,7 +450,7 @@ Real-time environmental sensing network
 </div>
 
 <div class="mt-4 text-center">
-  <a href="https://opensensor.space" target="_blank" class="text-green-600 underline text-sm">
+  <a href="https://opensensor.space" target="_blank" class="btn btn-link text-sm">
     Open in new tab <span i-carbon:launch class="inline-block ml-1" />
   </a>
 </div>
@@ -469,7 +469,7 @@ Traditional IoT vs. Our Approach
 
 <div class="grid grid-cols-2 gap-6">
 
-<div class="rounded-xl border-2 p-4 border-red-300 bg-red-50">
+<div class="rounded-xl border-2 border-solid p-4 border-red-300 bg-red-50">
   <div class="font-bold text-lg mb-3 text-red-600">Traditional IoT Stack</div>
   <div class="space-y-2 text-sm text-gray-600">
     <div class="flex items-center gap-2">
@@ -495,7 +495,7 @@ Traditional IoT vs. Our Approach
   </div>
 </div>
 
-<div class="rounded-xl border-2 p-4 border-green-400 bg-green-50">
+<div class="rounded-xl border-2 border-solid p-4 border-green-400 bg-green-50">
   <div class="font-bold text-lg mb-3 text-green-600">OpenSensor.Space</div>
   <div class="space-y-2 text-sm text-gray-600">
     <div class="flex items-center gap-2">
@@ -706,20 +706,26 @@ layout: center
 
 <div class="mt-8 grid grid-cols-3 gap-6 max-w-2xl mx-auto">
 
-<a href="https://opensensor.space/join-network/" target="_blank" class="rounded-lg border-2 p-4 backdrop-blur bg-opacity-10 border-green-500 bg-green-50 no-underline text-inherit hover:bg-green-100 transition-all block">
-  <div i-carbon:iot-connect class="text-3xl text-green-500 mx-auto" />
-  <div class="mt-2 text-sm font-medium">Deploy a Sensor</div>
-</a>
+<div class="rounded-lg border-2 border-solid p-4 backdrop-blur bg-opacity-10 border-green-500 bg-green-50">
+  <a href="https://opensensor.space/join-network/" target="_blank" class="no-underline text-inherit block">
+    <div i-carbon:iot-connect class="text-3xl text-green-500 mx-auto" />
+    <div class="mt-2 text-sm font-medium">Deploy a Sensor</div>
+  </a>
+</div>
 
-<a href="https://source.coop/walkthru-earth" target="_blank" class="rounded-lg border-2 p-4 backdrop-blur bg-opacity-10 border-amber-500 bg-amber-50 no-underline text-inherit hover:bg-amber-100 transition-all block">
-  <img src="https://walkthru.earth/source-coop-logo.png" class="h-8 w-8 mx-auto" alt="Source Cooperative" />
-  <div class="mt-2 text-sm font-medium">Access Our Data</div>
-</a>
+<div class="rounded-lg border-2 border-solid p-4 backdrop-blur bg-opacity-10 border-amber-500 bg-amber-50">
+  <a href="https://source.coop/walkthru-earth" target="_blank" class="no-underline text-inherit block">
+    <img src="https://walkthru.earth/source-coop-logo.png" class="h-8 w-8 mx-auto" alt="Source Cooperative" />
+    <div class="mt-2 text-sm font-medium">Access Our Data</div>
+  </a>
+</div>
 
-<a href="https://github.com/walkthru-earth" target="_blank" class="rounded-lg border-2 p-4 backdrop-blur bg-opacity-10 border-blue-500 bg-blue-50 no-underline text-inherit hover:bg-blue-100 transition-all block">
-  <div i-carbon:logo-github class="text-3xl text-blue-500 mx-auto" />
-  <div class="mt-2 text-sm font-medium">Follow the Journey</div>
-</a>
+<div class="rounded-lg border-2 border-solid p-4 backdrop-blur bg-opacity-10 border-blue-500 bg-blue-50">
+  <a href="https://github.com/walkthru-earth" target="_blank" class="no-underline text-inherit block">
+    <div i-carbon:logo-github class="text-3xl text-blue-500 mx-auto" />
+    <div class="mt-2 text-sm font-medium">Follow the Journey</div>
+  </a>
+</div>
 
 </div>
 
