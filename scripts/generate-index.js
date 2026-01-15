@@ -334,6 +334,17 @@ const HTML_TEMPLATE = (links) => `<!DOCTYPE html>
             height: 16px;
         }
 
+        .nav-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .nav-header .back-link {
+            margin-bottom: 0;
+        }
+
         /* Animations */
         @keyframes fadeInDown {
             from { opacity: 0; transform: translateY(-20px); }
@@ -380,13 +391,23 @@ const HTML_TEMPLATE = (links) => `<!DOCTYPE html>
     </div>
 
     <div class="container">
-        <!-- Back to website -->
-        <a href="https://walkthru.earth" class="back-link">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-            </svg>
-            Back to walkthru.earth
-        </a>
+        <div class="nav-header">
+            <!-- Back to website -->
+            <a href="https://walkthru.earth" class="back-link">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                </svg>
+                Back to walkthru.earth
+            </a>
+
+            <!-- Links Page -->
+            <a href="https://walkthru.earth/links" class="btn btn-outline" style="height: 36px; font-size: 0.9rem; padding: 0 1rem;">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                </svg>
+                Links
+            </a>
+        </div>
 
         <header>
             <img src="https://walkthru.earth/icon.svg" alt="Walkthru Earth" class="logo" />
