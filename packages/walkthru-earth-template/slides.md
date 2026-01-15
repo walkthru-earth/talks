@@ -234,6 +234,7 @@ To measure what matters, we've built <strong>three complementary tools</strong> 
   <div class="text-center text-sm text-gray-600">
     A network of DIY stations providing <strong>real-time data</strong> on air, noise, and light
   </div>
+  <div class="text-center text-xs text-green-700 mt-2 font-medium">✓ Live with 2 stations</div>
 </div>
 
 <div class="rounded-xl border-2 border-solid p-6 backdrop-blur bg-opacity-10 border-amber-500 bg-amber-500 h-full">
@@ -244,6 +245,7 @@ To measure what matters, we've built <strong>three complementary tools</strong> 
   <div class="text-center text-sm text-gray-600">
     A score based on <strong>50+ factors</strong> including food, water, and school access
   </div>
+  <div class="text-center text-xs text-amber-700 mt-2 font-medium">In development</div>
 </div>
 
 <div class="rounded-xl border-2 border-solid p-6 backdrop-blur bg-opacity-10 border-rose-400 bg-rose-400 h-full">
@@ -254,6 +256,7 @@ To measure what matters, we've built <strong>three complementary tools</strong> 
   <div class="text-center text-sm text-gray-600">
     Measuring how urban design affects <strong>human behavior and emotions</strong>
   </div>
+  <div class="text-center text-xs text-rose-700 mt-2 font-medium">App ready</div>
 </div>
 
 </div>
@@ -379,6 +382,242 @@ flowchart LR
 
 ---
 
+# OpenSensor.Space — Live Now
+
+<div class="mt-2 px-8">
+
+<div class="text-lg text-gray-600 mb-4">
+Our first tool is <strong>already deployed</strong> — real-time environmental sensing running for over a year
+</div>
+
+<div class="rounded-xl overflow-hidden border-2 border-green-400" style="height: 380px;">
+  <iframe
+    src="https://opensensor.space/"
+    class="w-full h-full"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope"
+  ></iframe>
+</div>
+
+<div class="mt-3 flex justify-between items-center">
+  <div class="flex gap-4 text-sm">
+    <div class="flex items-center gap-1.5 text-green-600">
+      <div i-carbon:checkmark-filled />
+      <span>2 stations live</span>
+    </div>
+    <div class="flex items-center gap-1.5 text-green-600">
+      <div i-carbon:checkmark-filled />
+      <span>1+ year of data</span>
+    </div>
+  </div>
+  <a href="https://opensensor.space" target="_blank" class="btn btn-link text-sm">
+    Open in new tab <span i-carbon:launch class="inline-block ml-1" />
+  </a>
+</div>
+
+</div>
+
+---
+
+# Why Rebuild the Stack?
+
+<div class="mt-2 px-4">
+
+<div class="text-lg text-gray-600 mb-4">
+Existing tools weren't designed for <strong>open, collaborative urban data</strong>
+</div>
+
+<div class="grid grid-cols-4 gap-3">
+
+<div class="rounded-xl border-2 border-solid p-3 border-red-300 bg-red-50 text-center">
+  <div i-carbon:copy class="text-3xl text-red-400 mx-auto mb-2" />
+  <div class="font-bold text-sm text-red-600">Data Duplication</div>
+  <div class="text-xs text-gray-600 mt-1">
+    Every org rebuilds the same pipelines for public data
+  </div>
+</div>
+
+<div class="rounded-xl border-2 border-solid p-3 border-amber-300 bg-amber-50 text-center">
+  <div i-carbon:locked class="text-3xl text-amber-500 mx-auto mb-2" />
+  <div class="font-bold text-sm text-amber-600">Vendor Lock-in</div>
+  <div class="text-xs text-gray-600 mt-1">
+    Proprietary formats trap data in silos
+  </div>
+</div>
+
+<div class="rounded-xl border-2 border-solid p-3 border-purple-300 bg-purple-50 text-center">
+  <div i-carbon:query-queue class="text-3xl text-purple-500 mx-auto mb-2" />
+  <div class="font-bold text-sm text-purple-600">Not Analysis-Ready</div>
+  <div class="text-xs text-gray-600 mt-1">
+    Raw data needs ETL before any insights
+  </div>
+</div>
+
+<div class="rounded-xl border-2 border-solid p-3 border-blue-300 bg-blue-50 text-center">
+  <div i-carbon:battery-low class="text-3xl text-blue-500 mx-auto mb-2" />
+  <div class="font-bold text-sm text-blue-600">Energy Waste</div>
+  <div class="text-xs text-gray-600 mt-1">
+    Always-on servers for intermittent data
+  </div>
+</div>
+
+</div>
+
+<div class="mt-4 rounded-xl border-2 border-solid p-4 border-green-400 bg-green-50">
+  <div class="font-bold text-green-700 mb-3 flex items-center gap-2 text-lg">
+    <div i-carbon:lightbulb class="text-2xl" />
+    Our Approach
+  </div>
+  <div class="grid grid-cols-2 gap-3 text-sm text-gray-700">
+    <div class="flex items-center gap-2">
+      <div i-carbon:checkmark class="text-green-500 text-lg flex-shrink-0" />
+      <span><strong>Open formats</strong> — Parquet, GeoParquet, Iceberg</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div i-carbon:checkmark class="text-green-500 text-lg flex-shrink-0" />
+      <span><strong>Analysis-ready</strong> — DuckDB, Spark, Python</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div i-carbon:checkmark class="text-green-500 text-lg flex-shrink-0" />
+      <span><strong>AI-ready</strong> — ML pipelines & embeddings</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div i-carbon:checkmark class="text-green-500 text-lg flex-shrink-0" />
+      <span><strong>Serverless</strong> — No idle costs, pay for compute</span>
+    </div>
+  </div>
+</div>
+
+<div class="mt-2 text-center text-sm" style="color: hsl(158 64% 42%)">
+  <strong>Result:</strong> 60-90% less energy • Zero data loss • No vendor lock-in • Ready for AI
+</div>
+
+</div>
+
+---
+
+# Cloud-Native Everywhere
+
+<div class="mt-2 px-4">
+
+<div class="text-lg text-gray-600 mb-3">
+The same architecture powers <strong>all our tools</strong> — from edge sensors to mobile apps
+</div>
+
+<div class="grid grid-cols-3 gap-4">
+
+<div class="rounded-xl border-2 border-solid p-3 border-green-400 bg-green-50">
+  <div class="flex items-center gap-2 mb-2">
+    <div i-carbon:iot-platform class="text-2xl text-green-500" />
+    <div class="font-bold text-green-700">IoT Sensors</div>
+  </div>
+  <div class="space-y-1 text-xs text-gray-600">
+    <div class="flex items-center gap-1">
+      <div i-carbon:checkmark class="text-green-500" />
+      <span>Raspberry Pi → Parquet → S3</span>
+    </div>
+    <div class="flex items-center gap-1">
+      <div i-carbon:checkmark class="text-green-500" />
+      <span>No MQTT, no database servers</span>
+    </div>
+    <div class="flex items-center gap-1">
+      <div i-carbon:checkmark class="text-green-500" />
+      <span>Offline-first, zero data loss</span>
+    </div>
+  </div>
+</div>
+
+<div class="rounded-xl border-2 border-solid p-3 border-rose-400 bg-rose-50">
+  <div class="flex items-center gap-2 mb-2">
+    <div i-carbon:mobile class="text-2xl text-rose-500" />
+    <div class="font-bold text-rose-700">Mobile App</div>
+  </div>
+  <div class="space-y-1 text-xs text-gray-600">
+    <div class="flex items-center gap-1">
+      <div i-carbon:checkmark class="text-rose-500" />
+      <span>DuckDB runs on your phone</span>
+    </div>
+    <div class="flex items-center gap-1">
+      <div i-carbon:checkmark class="text-rose-500" />
+      <span>Query Iceberg/DuckLake directly</span>
+    </div>
+    <div class="flex items-center gap-1">
+      <div i-carbon:checkmark class="text-rose-500" />
+      <span>No backend API needed</span>
+    </div>
+  </div>
+</div>
+
+<div class="rounded-xl border-2 border-solid p-3 border-amber-400 bg-amber-50">
+  <div class="flex items-center gap-2 mb-2">
+    <div i-carbon:data-refinery class="text-2xl text-amber-500" />
+    <div class="font-bold text-amber-700">Data Pipelines</div>
+  </div>
+  <div class="space-y-1 text-xs text-gray-600">
+    <div class="flex items-center gap-1">
+      <div i-carbon:checkmark class="text-amber-500" />
+      <span>Ephemeral runners (no servers)</span>
+    </div>
+    <div class="flex items-center gap-1">
+      <div i-carbon:checkmark class="text-amber-500" />
+      <span>DuckDB SQL transformations</span>
+    </div>
+    <div class="flex items-center gap-1">
+      <div i-carbon:checkmark class="text-amber-500" />
+      <span>Output to open formats</span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div class="mt-3 flex justify-center">
+
+```mermaid {scale: 0.45}
+flowchart LR
+    subgraph Sources["Data Sources"]
+        A[fa:fa-microchip IoT Sensor]
+        B[fa:fa-mobile Mobile App]
+        C[fa:fa-code Pipeline]
+    end
+    subgraph Format["Open Format"]
+        D[fa:fa-file Parquet/Iceberg]
+    end
+    subgraph Storage["Object Storage"]
+        E[fa:fa-cloud S3 / source.coop]
+    end
+    subgraph Query["Query Anywhere"]
+        F[fa:fa-database DuckDB]
+        G[fa:fa-mobile Phone]
+        H[fa:fa-globe Browser]
+    end
+    A --> D
+    B --> D
+    C --> D
+    D --> E
+    E --> F
+    E --> G
+    E --> H
+    style A fill:#d1fae5,stroke:#059669
+    style B fill:#ffe4e6,stroke:#f43f5e
+    style C fill:#fef3c7,stroke:#d97706
+    style D fill:#e0e7ff,stroke:#6366f1
+    style E fill:#e0e7ff,stroke:#6366f1
+    style F fill:#d1fae5,stroke:#059669
+    style G fill:#ffe4e6,stroke:#f43f5e
+    style H fill:#dbeafe,stroke:#3b82f6
+```
+
+</div>
+
+<div class="mt-2 text-center text-sm text-gray-500">
+  <strong>The insight:</strong> One architecture, many devices — no servers in between
+</div>
+
+</div>
+
+---
+
 # Hormones & Cities App
 
 <div class="text-base text-gray-600 mb-2 text-center">
@@ -469,71 +708,6 @@ Capturing the <strong>human experience</strong> of your city — completely anon
 
 ---
 
-# Why We Are "Open"
-
-<div class="mt-4 px-8">
-
-<div class="text-xl text-gray-700 leading-relaxed mb-6">
-We believe urban data should be <strong>public infrastructure</strong>, just like roads and bridges.
-</div>
-
-<div class="grid grid-cols-3 gap-6">
-
-<div class="col-span-1">
-
-```mermaid {scale: 0.7}
-flowchart TB
-    A[Raw Data] --> B[Open Platform]
-    B --> C[Community Verification]
-    C --> D[Trusted Insights]
-    style A fill:#e0f2f1,stroke:#2f7f7a
-    style B fill:#fef3c7,stroke:#d97706
-    style C fill:#e0f2f1,stroke:#2f7f7a
-    style D fill:#d1fae5,stroke:#059669
-```
-
-</div>
-
-<div class="col-span-2 space-y-4">
-
-<div class="rounded-xl border-2 border-solid p-4 backdrop-blur bg-opacity-10 border-green-500 bg-green-50">
-  <div class="flex items-center gap-4 mb-2">
-    <div i-carbon:checkmark-filled class="text-2xl text-green-500"/>
-    <div class="font-bold text-lg">Trust</div>
-  </div>
-  <div class="text-sm text-gray-600">
-    All our code is on <a href="https://github.com/walkthru-earth" target="_blank" class="text-green-600 underline">GitHub</a> and our data is public, meaning it can be <strong>verified and audited</strong> by anyone.
-  </div>
-</div>
-
-<div class="rounded-xl border-2 border-solid p-4 backdrop-blur bg-opacity-10 border-purple-500 bg-purple-50">
-  <div class="flex items-center gap-4 mb-2">
-    <img src="https://walkthru.earth/source-coop-logo.png" class="h-6 w-6" alt="Source Cooperative" />
-    <div class="font-bold text-lg text-purple-700">Open Data</div>
-  </div>
-  <div class="text-sm text-gray-600">
-    All datasets available on <strong>Source Cooperative</strong> — a non-profit data sharing platform for the public good.
-  </div>
-</div>
-
-<div class="rounded-xl border-2 border-solid p-4 backdrop-blur bg-opacity-10 border-amber-500 bg-amber-50">
-  <div class="flex items-center gap-4 mb-2">
-    <div i-carbon:globe class="text-2xl text-amber-500"/>
-    <div class="font-bold text-lg">Equity</div>
-  </div>
-  <div class="text-sm text-gray-600">
-    A community in <strong>Dhaka</strong> has access to the same high-quality tools as a developer in <strong>Dubai</strong>.
-  </div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
----
-
 # Privacy by Design
 
 <div class="mt-2 px-6">
@@ -613,7 +787,72 @@ flowchart TB
 
 ---
 
-# Who We Help
+# Why We Are "Open"
+
+<div class="mt-4 px-8">
+
+<div class="text-xl text-gray-700 leading-relaxed mb-6">
+We believe urban data should be <strong>public infrastructure</strong>, just like roads and bridges.
+</div>
+
+<div class="grid grid-cols-3 gap-6">
+
+<div class="col-span-1">
+
+```mermaid {scale: 0.7}
+flowchart TB
+    A[Raw Data] --> B[Open Platform]
+    B --> C[Community Verification]
+    C --> D[Trusted Insights]
+    style A fill:#e0f2f1,stroke:#2f7f7a
+    style B fill:#fef3c7,stroke:#d97706
+    style C fill:#e0f2f1,stroke:#2f7f7a
+    style D fill:#d1fae5,stroke:#059669
+```
+
+</div>
+
+<div class="col-span-2 space-y-4">
+
+<div class="rounded-xl border-2 border-solid p-4 backdrop-blur bg-opacity-10 border-green-500 bg-green-50">
+  <div class="flex items-center gap-4 mb-2">
+    <div i-carbon:checkmark-filled class="text-2xl text-green-500"/>
+    <div class="font-bold text-lg">Trust</div>
+  </div>
+  <div class="text-sm text-gray-600">
+    All our code is on <a href="https://github.com/walkthru-earth" target="_blank" class="text-green-600 underline">GitHub</a> and our data is public, meaning it can be <strong>verified and audited</strong> by anyone.
+  </div>
+</div>
+
+<div class="rounded-xl border-2 border-solid p-4 backdrop-blur bg-opacity-10 border-purple-500 bg-purple-50">
+  <div class="flex items-center gap-4 mb-2">
+    <img src="https://walkthru.earth/source-coop-logo.png" class="h-6 w-6" alt="Source Cooperative" />
+    <div class="font-bold text-lg text-purple-700">Open Data</div>
+  </div>
+  <div class="text-sm text-gray-600">
+    All datasets available on <strong>Source Cooperative</strong> — a non-profit data sharing platform for the public good.
+  </div>
+</div>
+
+<div class="rounded-xl border-2 border-solid p-4 backdrop-blur bg-opacity-10 border-amber-500 bg-amber-50">
+  <div class="flex items-center gap-4 mb-2">
+    <div i-carbon:globe class="text-2xl text-amber-500"/>
+    <div class="font-bold text-lg">Equity</div>
+  </div>
+  <div class="text-sm text-gray-600">
+    A community in <strong>Dhaka</strong> has access to the same high-quality tools as a developer in <strong>Dubai</strong>.
+  </div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+---
+
+# Who Benefits?
 
 <div class="text-lg text-gray-600 mb-6 text-center">
 We turn data into <strong>actionable insights</strong> for everyone
@@ -654,128 +893,6 @@ We turn data into <strong>actionable insights</strong> for everyone
 </div>
 
 ---
-
-# OpenSensor.Space Live
-
-<div class="mt-4 px-8">
-
-<div class="text-lg text-gray-600 mb-4">
-Real-time environmental sensing network
-</div>
-
-<div class="rounded-xl overflow-hidden border-2 border-green-400" style="height: 400px;">
-  <iframe
-    src="https://opensensor.space/"
-    class="w-full h-full"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope"
-  ></iframe>
-</div>
-
-<div class="mt-4 text-center">
-  <a href="https://opensensor.space" target="_blank" class="btn btn-link text-sm">
-    Open in new tab <span i-carbon:launch class="inline-block ml-1" />
-  </a>
-</div>
-
-</div>
-
----
-
-# Why Cloud-Native?
-
-<div class="mt-2 px-6">
-
-<div class="text-lg text-gray-700 mb-4">
-Traditional IoT vs. Our Approach
-</div>
-
-<div class="grid grid-cols-2 gap-6">
-
-<div class="rounded-xl border-2 border-solid p-4 border-red-300 bg-red-50">
-  <div class="font-bold text-lg mb-3 text-red-600">Traditional IoT Stack</div>
-  <div class="space-y-2 text-sm text-gray-600">
-    <div class="flex items-center gap-2">
-      <div i-carbon:close class="text-red-400" />
-      <span>MQTT brokers</span>
-    </div>
-    <div class="flex items-center gap-2">
-      <div i-carbon:close class="text-red-400" />
-      <span>Database servers (InfluxDB, TimescaleDB)</span>
-    </div>
-    <div class="flex items-center gap-2">
-      <div i-carbon:close class="text-red-400" />
-      <span>Backend APIs</span>
-    </div>
-    <div class="flex items-center gap-2">
-      <div i-carbon:close class="text-red-400" />
-      <span>Data loss during outages</span>
-    </div>
-    <div class="flex items-center gap-2">
-      <div i-carbon:close class="text-red-400" />
-      <span>High energy consumption</span>
-    </div>
-  </div>
-</div>
-
-<div class="rounded-xl border-2 border-solid p-4 border-green-400 bg-green-50">
-  <div class="font-bold text-lg mb-3 text-green-600">OpenSensor.Space</div>
-  <div class="space-y-2 text-sm text-gray-600">
-    <div class="flex items-center gap-2">
-      <div i-carbon:checkmark class="text-green-500" />
-      <span>Edge → Object Storage (S3)</span>
-    </div>
-    <div class="flex items-center gap-2">
-      <div i-carbon:checkmark class="text-green-500" />
-      <span>No databases required</span>
-    </div>
-    <div class="flex items-center gap-2">
-      <div i-carbon:checkmark class="text-green-500" />
-      <span>Parquet format (query anywhere)</span>
-    </div>
-    <div class="flex items-center gap-2">
-      <div i-carbon:checkmark class="text-green-500" />
-      <span>Offline-first (zero data loss)</span>
-    </div>
-    <div class="flex items-center gap-2">
-      <div i-carbon:checkmark class="text-green-500" />
-      <span>60-90% less energy</span>
-    </div>
-  </div>
-</div>
-
-</div>
-
-<div class="mt-4">
-
-```mermaid {scale: 0.55}
-flowchart LR
-    subgraph Edge["Edge Device (Raspberry Pi)"]
-        S[Sensors] --> C[Collector]
-        C --> P[Parquet Files]
-    end
-    subgraph Cloud["Cloud Storage"]
-        P -->|Auto-sync| O[Object Storage]
-    end
-    subgraph Analytics["Browser Analytics"]
-        O --> D[DuckDB-WASM]
-        D --> V[Visualization]
-    end
-    style S fill:#e0f2f1,stroke:#2f7f7a
-    style P fill:#fef3c7,stroke:#d97706
-    style O fill:#e0e7ff,stroke:#6366f1
-    style V fill:#d1fae5,stroke:#059669
-```
-
-</div>
-
-<div class="text-center text-sm text-gray-500 mt-2">
-  <strong>The insight:</strong> Why use extra servers when the Pi already has WiFi?
-</div>
-
-</div>
-
----
 layout: center
 ---
 
@@ -785,7 +902,7 @@ layout: center
   <div i-carbon:data-share class="text-5xl text-amber-500" />
 </div>
 
-# The Data Sharing Problem
+# The Data Sharing Challenge
 
 <div class="grid grid-cols-2 gap-6 mt-6">
 
