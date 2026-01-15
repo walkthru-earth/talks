@@ -5,6 +5,7 @@ css: unocss
 colorSchema: light
 transition: fade-out
 title: Walkthru.earth - Cities Built for People
+favicon: /favicon.png
 lineNumbers: false
 drawings:
   persist: false
