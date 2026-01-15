@@ -1,0 +1,26 @@
+{
+  "name": "foss4g-2026-hiroshima",
+  "type": "module",
+  "private": true,
+  "description": "FOSS4G 2026 - Hiroshima",
+  "scripts": {
+    "build": "slidev build",
+    "build-base": "slidev build --out ../../dist/foss4g-2026-hiroshima --base /talks/foss4g-2026-hiroshima/",
+    "dev": "slidev --open --remote",
+    "export": "slidev export --with-clicks --per-slide --wait-until none"
+  },
+  "devDependencies": {
+    "@iconify-json/bi": "^1.2.7",
+    "@iconify-json/carbon": "^1.2.16",
+    "@iconify-json/devicon": "^1.2.56",
+    "@iconify-json/fluent": "^1.2.36",
+    "@iconify-json/icon-park-outline": "^1.2.4",
+    "@iconify-json/logos": "^1.2.10",
+    "@iconify-json/ph": "^1.2.2",
+    "@iconify-json/ri": "^1.2.7",
+    "@iconify-json/simple-icons": "^1.2.66",
+    "@iconify-json/svg-spinners": "^1.2.4",
+    "@iconify-json/twemoji": "^1.2.5",
+    "playwright-chromium": "^1.57.0"
+  }
+}

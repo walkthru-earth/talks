@@ -1,0 +1,136 @@
+/* Font imports */
+@import url('/fonts/fonts.css');
+
+:root {
+  --slidev-code-padding: 8px 10px;
+
+  /* WalkThru Earth Design System (matches website globals.css) */
+  /* Light Mode - Walkthru Earth Tones */
+  --background: hsl(60 20% 99%);
+  --foreground: hsl(0 0% 9%);
+
+  --card: hsl(60 10% 98%);
+  --card-foreground: hsl(0 0% 9%);
+
+  --primary: hsl(158 64% 52%);
+  --primary-foreground: hsl(0 0% 100%);
+
+  --secondary: hsl(37 91% 55%);
+  --secondary-foreground: hsl(0 0% 9%);
+
+  --muted: hsl(60 5% 96%);
+  --muted-foreground: hsl(0 0% 45%);
+
+  --border: hsl(60 5% 90%);
+  --ring: hsl(158 64% 52%);
+
+  --radius: 0.75rem;
+}
+
+/* Dark Mode */
+.dark {
+  --background: hsl(0 0% 7%);
+  --foreground: hsl(60 10% 98%);
+
+  --card: hsl(0 0% 10%);
+  --card-foreground: hsl(60 10% 98%);
+
+  --primary: hsl(158 64% 42%);
+  --primary-foreground: hsl(0 0% 9%);
+
+  --secondary: hsl(37 70% 45%);
+  --secondary-foreground: hsl(60 10% 98%);
+
+  --muted: hsl(0 0% 15%);
+  --muted-foreground: hsl(60 5% 65%);
+
+  --border: hsl(0 0% 20%);
+  --ring: hsl(158 64% 42%);
+}
+
+/* Transitions */
+.slidev-vclick-target {
+  transition: opacity 500ms ease, filter 200ms ease, color 300ms ease;
+}
+
+.slidev-vclick-hidden {
+  opacity: 0;
+  pointer-events: none;
+  filter: blur(3px);
+}
+
+.slidev-code {
+  backdrop-filter: blur(10px);
+  border: 1px solid #eee1;
+}
+
+/* Disable Slidev's default dashed underline on all links */
+.slidev-layout a {
+  text-decoration: none !important;
+  border-bottom: none !important;
+  background-image: none !important;
+}
+
+.slidev-layout a::before,
+.slidev-layout a::after {
+  display: none !important;
+  content: none !important;
+  border: none !important;
+  background: none !important;
+}
+
+/* Button Styles */
+.slidev-layout a.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.slidev-layout a.btn-primary {
+  height: 36px;
+  padding: 0 1rem;
+  background: var(--primary) !important;
+  color: var(--primary-foreground) !important;
+  border-radius: 9999px;
+}
+
+.slidev-layout a.btn-primary:hover {
+  filter: brightness(1.1);
+}
+
+.slidev-layout a.btn-outline {
+  height: 36px;
+  padding: 0 1rem;
+  background: transparent !important;
+  color: var(--primary) !important;
+  border: 2px solid var(--primary) !important;
+  border-radius: 9999px;
+}
+
+.slidev-layout a.btn-outline:hover {
+  background: var(--primary) !important;
+  color: var(--primary-foreground) !important;
+}
+
+.slidev-layout a.btn-link {
+  color: var(--primary) !important;
+  font-weight: 600;
+  padding: 0;
+  background: transparent !important;
+}
+
+.slidev-layout a.btn-link:hover {
+  text-decoration: underline !important;
+}
+
+/* Gradient Text */
+.gradient-text {
+  background: linear-gradient(to right, var(--primary), var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

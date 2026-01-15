@@ -482,6 +482,25 @@ async function main() {
         return fs.statSync(path.join(PACKAGES_DIR, file)).isDirectory();
     });
 
+    // Copy analytics files to each package
+    const analyticsSourceDir = path.join(ROOT_DIR, 'shared', 'analytics');
+    const analyticsFiles = ['global-top.vue', 'consent.ts', 'env.d.ts'];
+    
+    console.log('Copying analytics files to packages...');
+    for (const pkgName of packages) {
+        const pkgDir = path.join(PACKAGES_DIR, pkgName);
+        
+        for (const file of analyticsFiles) {
+            const sourcePath = path.join(analyticsSourceDir, file);
+            const destPath = path.join(pkgDir, file);
+            
+            if (fs.existsSync(sourcePath)) {
+                fs.copyFileSync(sourcePath, destPath);
+                console.log(`  ✓ ${pkgName}/${file}`);
+            }
+        }
+    }
+
     const links = [];
 
     for (const pkgName of packages) {
