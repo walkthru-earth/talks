@@ -220,8 +220,8 @@ We provide the <strong>"human layer"</strong> of urban intelligence
 
 # How We Do It
 
-<div class="text-lg text-gray-600 mb-8">
-We've built an infrastructure for <strong>human-centered development</strong> using three core tools:
+<div class="text-lg text-gray-600 mb-6">
+To measure what matters, we've built <strong>three complementary tools</strong> — each capturing a different dimension of urban life:
 </div>
 
 <div class="grid grid-cols-3 gap-6 px-4">
@@ -256,6 +256,170 @@ We've built an infrastructure for <strong>human-centered development</strong> us
   </div>
 </div>
 
+</div>
+
+---
+
+# Where Does the Data Come From?
+
+<div class="text-lg text-gray-600 mb-6">
+We combine <strong>three layers</strong> of data to build a complete picture of urban livability
+</div>
+
+<div class="grid grid-cols-3 gap-4 px-2">
+
+<div class="rounded-xl border-2 border-solid p-4 border-green-400 bg-green-50">
+  <div class="flex items-center gap-2 mb-3">
+    <div i-carbon:iot-platform class="text-2xl text-green-500"/>
+    <div class="font-bold text-green-700">IoT Sensors</div>
+  </div>
+  <div class="text-xs text-gray-600 space-y-1">
+    <div class="flex items-center gap-1">
+      <div i-carbon:checkmark class="text-green-500 text-sm"/>
+      <span>Raspberry Pi, Jetson, Edge devices</span>
+    </div>
+    <div class="flex items-center gap-1">
+      <div i-carbon:checkmark class="text-green-500 text-sm"/>
+      <span>Air quality (PM2.5, PM10)</span>
+    </div>
+    <div class="flex items-center gap-1">
+      <div i-carbon:checkmark class="text-green-500 text-sm"/>
+      <span>Temperature, humidity, noise</span>
+    </div>
+    <div class="flex items-center gap-1">
+      <div i-carbon:checkmark class="text-green-500 text-sm"/>
+      <span>Light levels (lux)</span>
+    </div>
+  </div>
+  <div class="mt-2 text-xs text-green-600 font-medium">Edge processing → Anonymous upload</div>
+</div>
+
+<div class="rounded-xl border-2 border-solid p-4 border-rose-400 bg-rose-50">
+  <div class="flex items-center gap-2 mb-3">
+    <div i-carbon:mobile class="text-2xl text-rose-500"/>
+    <div class="font-bold text-rose-700">Mobile App</div>
+  </div>
+  <div class="text-xs text-gray-600 space-y-1">
+    <div class="flex items-center gap-1">
+      <div i-carbon:checkmark class="text-rose-500 text-sm"/>
+      <span>Wellbeing surveys (mood, stress)</span>
+    </div>
+    <div class="flex items-center gap-1">
+      <div i-carbon:checkmark class="text-rose-500 text-sm"/>
+      <span>Community feedback</span>
+    </div>
+    <div class="flex items-center gap-1">
+      <div i-carbon:checkmark class="text-rose-500 text-sm"/>
+      <span>AI-guided reflection</span>
+    </div>
+    <div class="flex items-center gap-1">
+      <div i-carbon:checkmark class="text-rose-500 text-sm"/>
+      <span>Location aggregated to H3 cells</span>
+    </div>
+  </div>
+  <div class="mt-2 text-xs text-rose-600 font-medium">100% anonymous • No account needed</div>
+</div>
+
+<div class="rounded-xl border-2 border-solid p-4 border-blue-400 bg-blue-50">
+  <div class="flex items-center gap-2 mb-3">
+    <div i-carbon:data-base class="text-2xl text-blue-500"/>
+    <div class="font-bold text-blue-700">Open Data</div>
+  </div>
+  <div class="text-xs text-gray-600 space-y-1">
+    <div class="flex items-center gap-1">
+      <div i-carbon:checkmark class="text-blue-500 text-sm"/>
+      <span>LandScan population (90m)</span>
+    </div>
+    <div class="flex items-center gap-1">
+      <div i-carbon:checkmark class="text-blue-500 text-sm"/>
+      <span>Overture Maps (64M+ POIs)</span>
+    </div>
+    <div class="flex items-center gap-1">
+      <div i-carbon:checkmark class="text-blue-500 text-sm"/>
+      <span>OpenStreetMap infrastructure</span>
+    </div>
+    <div class="flex items-center gap-1">
+      <div i-carbon:checkmark class="text-blue-500 text-sm"/>
+      <span>Foursquare Places</span>
+    </div>
+  </div>
+  <div class="mt-2 text-xs text-blue-600 font-medium">Schools, hospitals, transit, green spaces</div>
+</div>
+
+</div>
+
+<div class="mt-4 text-center">
+
+```mermaid {scale: 0.5}
+flowchart LR
+    subgraph Collect["Data Collection"]
+        A[fa:fa-microchip Sensors]
+        B[fa:fa-mobile Mobile]
+        C[fa:fa-database Open Data]
+    end
+    subgraph Process["Edge Processing"]
+        D[fa:fa-lock Anonymize]
+        E[fa:fa-hexagon H3 Aggregate]
+    end
+    subgraph Store["Open Platform"]
+        F[fa:fa-cloud Source Coop]
+    end
+    A --> D
+    B --> D
+    C --> E
+    D --> E
+    E --> F
+    style A fill:#d1fae5,stroke:#059669
+    style B fill:#ffe4e6,stroke:#f43f5e
+    style C fill:#dbeafe,stroke:#3b82f6
+    style F fill:#e0e7ff,stroke:#6366f1
+```
+
+</div>
+
+---
+
+# Hormones & Cities App
+
+<div class="text-lg text-gray-600 mb-4 text-center">
+Capturing the <strong>human experience</strong> of your city — completely anonymously
+</div>
+
+<div class="grid grid-cols-3 gap-6 px-4">
+
+<div class="text-center">
+  <img src="/hormones-cities-survey.png" class="h-72 mx-auto rounded-xl shadow-lg border border-gray-200" />
+  <div class="mt-3 font-semibold text-sm">Survey Categories</div>
+  <div class="text-xs text-gray-500">Housing, wellbeing, community, environment</div>
+</div>
+
+<div class="text-center">
+  <img src="/hormones-cities-ai.png" class="h-72 mx-auto rounded-xl shadow-lg border border-gray-200" />
+  <div class="mt-3 font-semibold text-sm">AI Reflection</div>
+  <div class="text-xs text-gray-500">Guided conversations about your day</div>
+</div>
+
+<div class="text-center">
+  <img src="/hormones-cities-dashboard.png" class="h-72 mx-auto rounded-xl shadow-lg border border-gray-200" />
+  <div class="mt-3 font-semibold text-sm">City Pulse Dashboard</div>
+  <div class="text-xs text-gray-500">See trends across your community</div>
+</div>
+
+</div>
+
+<div class="mt-4 flex justify-center gap-8 text-sm">
+  <div class="flex items-center gap-2 text-green-600">
+    <div i-carbon:checkmark-filled class="text-lg"/>
+    <span>No account required</span>
+  </div>
+  <div class="flex items-center gap-2 text-green-600">
+    <div i-carbon:checkmark-filled class="text-lg"/>
+    <span>No personal data stored</span>
+  </div>
+  <div class="flex items-center gap-2 text-green-600">
+    <div i-carbon:checkmark-filled class="text-lg"/>
+    <span>Location aggregated to neighborhood</span>
+  </div>
 </div>
 
 ---
@@ -327,42 +491,52 @@ flowchart TB
 
 # Privacy by Design
 
-<div class="mt-4 px-8">
+<div class="mt-2 px-6">
 
-<div class="text-xl text-gray-700 leading-relaxed mb-6">
+<div class="text-lg text-gray-700 leading-relaxed mb-4">
 Your data helps cities improve. Your <strong>identity</strong> stays yours.
 </div>
 
-<div class="grid grid-cols-2 gap-8">
+<div class="grid grid-cols-2 gap-6">
 
-<div class="space-y-4">
+<div class="space-y-3">
 
-<div class="rounded-xl border-2 border-solid p-4 backdrop-blur bg-opacity-10 border-blue-500 bg-blue-50">
-  <div class="flex items-center gap-4 mb-2">
-    <div i-carbon:user-avatar class="text-2xl text-blue-500"/>
-    <div class="font-bold text-lg">Anonymous Upload</div>
+<div class="rounded-xl border-2 border-solid p-3 backdrop-blur bg-opacity-10 border-amber-500 bg-amber-50">
+  <div class="flex items-center gap-3 mb-1">
+    <div i-carbon:edge-node class="text-xl text-amber-500"/>
+    <div class="font-bold">Edge Computation</div>
   </div>
-  <div class="text-sm text-gray-600">
-    Survey responses are <strong>completely anonymous</strong>. No account required, no personal data stored.
+  <div class="text-xs text-gray-600">
+    Data is <strong>processed on-device</strong> before upload. Your raw data never leaves your phone or sensor.
   </div>
 </div>
 
-<div class="rounded-xl border-2 border-solid p-4 backdrop-blur bg-opacity-10 border-purple-500 bg-purple-50">
-  <div class="flex items-center gap-4 mb-2">
-    <div i-carbon:location class="text-2xl text-purple-500"/>
-    <div class="font-bold text-lg">H3 Spatial Aggregation</div>
+<div class="rounded-xl border-2 border-solid p-3 backdrop-blur bg-opacity-10 border-blue-500 bg-blue-50">
+  <div class="flex items-center gap-3 mb-1">
+    <div i-carbon:user-avatar class="text-xl text-blue-500"/>
+    <div class="font-bold">Anonymous Upload</div>
   </div>
-  <div class="text-sm text-gray-600">
-    Location data is aggregated into <strong>H3 hexagonal cells</strong>. We measure neighborhoods, not individuals.
+  <div class="text-xs text-gray-600">
+    <strong>No account required</strong>. No email, no personal data stored. Responses are untraceable.
   </div>
 </div>
 
-<div class="rounded-xl border-2 border-solid p-4 backdrop-blur bg-opacity-10 border-green-500 bg-green-50">
-  <div class="flex items-center gap-4 mb-2">
-    <div i-carbon:locked class="text-2xl text-green-500"/>
-    <div class="font-bold text-lg">No Tracking</div>
+<div class="rounded-xl border-2 border-solid p-3 backdrop-blur bg-opacity-10 border-purple-500 bg-purple-50">
+  <div class="flex items-center gap-3 mb-1">
+    <div i-carbon:location class="text-xl text-purple-500"/>
+    <div class="font-bold">H3 Spatial Aggregation</div>
   </div>
-  <div class="text-sm text-gray-600">
+  <div class="text-xs text-gray-600">
+    Location aggregated to <strong>~500m hexagonal cells</strong>. We measure neighborhoods, not individuals.
+  </div>
+</div>
+
+<div class="rounded-xl border-2 border-solid p-3 backdrop-blur bg-opacity-10 border-green-500 bg-green-50">
+  <div class="flex items-center gap-3 mb-1">
+    <div i-carbon:locked class="text-xl text-green-500"/>
+    <div class="font-bold">No Tracking</div>
+  </div>
+  <div class="text-xs text-gray-600">
     No cookies, no fingerprinting, no behavioral tracking. Just <strong>honest urban data</strong>.
   </div>
 </div>
@@ -371,15 +545,19 @@ Your data helps cities improve. Your <strong>identity</strong> stays yours.
 
 <div class="flex items-center justify-center">
 
-```mermaid {scale: 0.65}
+```mermaid {scale: 0.55}
 flowchart TB
-    A[Your Response] --> B[Remove Identity]
-    B --> C[H3 Hexagon Cell]
-    C --> D[Aggregated Insights]
+    subgraph Device["Your Device"]
+        A[Raw Data] --> B[Edge Processing]
+    end
+    B --> C[Anonymize & Aggregate]
+    C --> D[H3 Hexagon Cell]
+    D --> E[Community Insights]
     style A fill:#fef3c7,stroke:#d97706
-    style B fill:#e0e7ff,stroke:#6366f1
-    style C fill:#f3e8ff,stroke:#9333ea
-    style D fill:#d1fae5,stroke:#059669
+    style B fill:#fef3c7,stroke:#d97706
+    style C fill:#e0e7ff,stroke:#6366f1
+    style D fill:#f3e8ff,stroke:#9333ea
+    style E fill:#d1fae5,stroke:#059669
 ```
 
 </div>
