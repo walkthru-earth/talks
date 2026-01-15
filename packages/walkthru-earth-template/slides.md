@@ -789,63 +789,88 @@ flowchart TB
 
 # Why We Are "Open"
 
-<div class="mt-4 px-8">
+<div class="mt-2 px-4">
 
-<div class="text-xl text-gray-700 leading-relaxed mb-6">
+<div class="text-lg text-gray-700 leading-relaxed mb-4">
 We believe urban data should be <strong>public infrastructure</strong>, just like roads and bridges.
 </div>
 
-<div class="grid grid-cols-3 gap-6">
+<div class="grid grid-cols-2 gap-4">
 
-<div class="col-span-1">
+<div class="space-y-3">
 
-```mermaid {scale: 0.7}
-flowchart TB
-    A[Raw Data] --> B[Open Platform]
-    B --> C[Community Verification]
-    C --> D[Trusted Insights]
-    style A fill:#e0f2f1,stroke:#2f7f7a
-    style B fill:#fef3c7,stroke:#d97706
-    style C fill:#e0f2f1,stroke:#2f7f7a
-    style D fill:#d1fae5,stroke:#059669
-```
+<div class="rounded-xl border-2 border-solid p-3 border-green-500 bg-green-50">
+  <div class="flex items-center gap-3 mb-1">
+    <div i-carbon:checkmark-filled class="text-xl text-green-500"/>
+    <div class="font-bold">Trust & Transparency</div>
+  </div>
+  <div class="text-xs text-gray-600">
+    All code on <a href="https://github.com/walkthru-earth" target="_blank" class="text-green-600 underline">GitHub</a>. Every pipeline, model, and methodology can be <strong>verified and audited</strong> by anyone.
+  </div>
+</div>
+
+<div class="rounded-xl border-2 border-solid p-3 border-blue-500 bg-blue-50">
+  <div class="flex items-center gap-3 mb-1">
+    <div i-carbon:repeat class="text-xl text-blue-500"/>
+    <div class="font-bold">Reproducibility</div>
+  </div>
+  <div class="text-xs text-gray-600">
+    Any researcher can <strong>reproduce our findings</strong> using the same data and code. Science that can't be replicated isn't science.
+  </div>
+</div>
+
+<div class="rounded-xl border-2 border-solid p-3 border-amber-500 bg-amber-50">
+  <div class="flex items-center gap-3 mb-1">
+    <div i-carbon:globe class="text-xl text-amber-500"/>
+    <div class="font-bold">Global Equity</div>
+  </div>
+  <div class="text-xs text-gray-600">
+    A community in <strong>Dhaka</strong> has the same tools as <strong>Dubai</strong>. No paywalls, no gatekeepers, no privileged access.
+  </div>
+</div>
 
 </div>
 
-<div class="col-span-2 space-y-4">
+<div class="space-y-3">
 
-<div class="rounded-xl border-2 border-solid p-4 backdrop-blur bg-opacity-10 border-green-500 bg-green-50">
-  <div class="flex items-center gap-4 mb-2">
-    <div i-carbon:checkmark-filled class="text-2xl text-green-500"/>
-    <div class="font-bold text-lg">Trust</div>
+<div class="rounded-xl border-2 border-solid p-3 border-purple-500 bg-purple-50">
+  <div class="flex items-center gap-3 mb-1">
+    <img src="https://walkthru.earth/source-coop-logo.png" class="h-5 w-5" alt="Source Cooperative" />
+    <div class="font-bold text-purple-700">Open Data Platform</div>
   </div>
+  <div class="text-xs text-gray-600">
+    All datasets on <strong>Source Cooperative</strong> — a non-profit platform where data is a public good, not a product.
+  </div>
+</div>
+
+<div class="rounded-xl border-2 border-solid p-3 border-rose-500 bg-rose-50">
+  <div class="flex items-center gap-3 mb-1">
+    <div i-carbon:group class="text-xl text-rose-500"/>
+    <div class="font-bold">Community-Driven</div>
+  </div>
+  <div class="text-xs text-gray-600">
+    Anyone can <strong>contribute new data sources</strong>, improve pipelines, or extend the platform. This is collective infrastructure.
+  </div>
+</div>
+
+<div class="rounded-xl border-2 border-solid p-3 border-teal-500 bg-teal-50">
+  <div class="flex items-center gap-3 mb-1">
+    <div i-carbon:security class="text-xl text-teal-500"/>
+    <div class="font-bold">Accountability</div>
+  </div>
+  <div class="text-xs text-gray-600">
+    Open data means <strong>no hidden agendas</strong>. If our methods are flawed, the community will find and fix them.
+  </div>
+</div>
+
+</div>
+
+</div>
+
+<div class="mt-3 p-3 rounded-lg bg-gray-100 text-center">
   <div class="text-sm text-gray-600">
-    All our code is on <a href="https://github.com/walkthru-earth" target="_blank" class="text-green-600 underline">GitHub</a> and our data is public, meaning it can be <strong>verified and audited</strong> by anyone.
+    <strong>"Closed data creates closed cities."</strong> We're building the opposite — infrastructure that belongs to everyone.
   </div>
-</div>
-
-<div class="rounded-xl border-2 border-solid p-4 backdrop-blur bg-opacity-10 border-purple-500 bg-purple-50">
-  <div class="flex items-center gap-4 mb-2">
-    <img src="https://walkthru.earth/source-coop-logo.png" class="h-6 w-6" alt="Source Cooperative" />
-    <div class="font-bold text-lg text-purple-700">Open Data</div>
-  </div>
-  <div class="text-sm text-gray-600">
-    All datasets available on <strong>Source Cooperative</strong> — a non-profit data sharing platform for the public good.
-  </div>
-</div>
-
-<div class="rounded-xl border-2 border-solid p-4 backdrop-blur bg-opacity-10 border-amber-500 bg-amber-50">
-  <div class="flex items-center gap-4 mb-2">
-    <div i-carbon:globe class="text-2xl text-amber-500"/>
-    <div class="font-bold text-lg">Equity</div>
-  </div>
-  <div class="text-sm text-gray-600">
-    A community in <strong>Dhaka</strong> has access to the same high-quality tools as a developer in <strong>Dubai</strong>.
-  </div>
-</div>
-
-</div>
-
 </div>
 
 </div>
@@ -854,42 +879,85 @@ flowchart TB
 
 # Who Benefits?
 
-<div class="text-lg text-gray-600 mb-6 text-center">
+<div class="text-base text-gray-600 mb-3 text-center">
 We turn data into <strong>actionable insights</strong> for everyone
 </div>
 
-<div class="grid grid-cols-3 gap-8 px-8 mt-8">
+<div class="flex justify-center items-center gap-8">
+
+<!-- Left column -->
+<div class="space-y-3">
 
 <div class="text-center">
-  <div class="rounded-full w-24 h-24 mx-auto flex items-center justify-center bg-green-100 border-3 border-green-400">
-    <div i-carbon:home class="text-5xl text-green-600"/>
+  <div class="rounded-full w-14 h-14 mx-auto flex items-center justify-center bg-green-100 border-2 border-green-400">
+    <div i-carbon:home class="text-2xl text-green-600"/>
   </div>
-  <div class="mt-4 font-bold text-lg">For Families</div>
-  <div class="mt-2 text-sm text-gray-600">
-    Understanding if a neighborhood is <strong>healthy for their children</strong>
-  </div>
+  <div class="mt-1 font-bold text-xs">Families</div>
+  <div class="text-xs text-gray-500 max-w-24">Healthy neighborhoods</div>
 </div>
 
 <div class="text-center">
-  <div class="rounded-full w-24 h-24 mx-auto flex items-center justify-center bg-blue-100 border-3 border-blue-400">
-    <div i-carbon:map class="text-5xl text-blue-600"/>
+  <div class="rounded-full w-14 h-14 mx-auto flex items-center justify-center bg-blue-100 border-2 border-blue-400">
+    <div i-carbon:map class="text-2xl text-blue-600"/>
   </div>
-  <div class="mt-4 font-bold text-lg">For Planners</div>
-  <div class="mt-2 text-sm text-gray-600">
-    Evidence needed to justify <strong>investing in parks</strong> and livability
-  </div>
+  <div class="mt-1 font-bold text-xs">Planners</div>
+  <div class="text-xs text-gray-500 max-w-24">Evidence for parks</div>
 </div>
 
 <div class="text-center">
-  <div class="rounded-full w-24 h-24 mx-auto flex items-center justify-center bg-amber-100 border-3 border-amber-400">
-    <div i-carbon:growth class="text-5xl text-amber-600"/>
+  <div class="rounded-full w-14 h-14 mx-auto flex items-center justify-center bg-amber-100 border-2 border-amber-400">
+    <div i-carbon:growth class="text-2xl text-amber-600"/>
   </div>
-  <div class="mt-4 font-bold text-lg">For Investors</div>
-  <div class="mt-2 text-sm text-gray-600">
-    The "social impact" data required for <strong>modern ESG reporting</strong>
+  <div class="mt-1 font-bold text-xs">Investors</div>
+  <div class="text-xs text-gray-500 max-w-24">ESG reporting</div>
+</div>
+
+</div>
+
+<!-- Center - The Individual (largest) -->
+<div class="text-center">
+  <div class="rounded-full w-32 h-32 mx-auto flex items-center justify-center bg-gradient-to-br from-green-100 to-amber-100 border-4 border-green-500 shadow-lg">
+    <div i-carbon:user class="text-7xl text-green-600"/>
+  </div>
+  <div class="mt-3 font-bold text-lg" style="color: hsl(158 64% 42%)">You</div>
+  <div class="text-sm text-gray-600 max-w-40 mx-auto">
+    Know what your city is doing to <strong>your health</strong>
   </div>
 </div>
 
+<!-- Right column -->
+<div class="space-y-3">
+
+<div class="text-center">
+  <div class="rounded-full w-14 h-14 mx-auto flex items-center justify-center bg-purple-100 border-2 border-purple-400">
+    <div i-carbon:education class="text-2xl text-purple-600"/>
+  </div>
+  <div class="mt-1 font-bold text-xs">Researchers</div>
+  <div class="text-xs text-gray-500 max-w-24">Open datasets</div>
+</div>
+
+<div class="text-center">
+  <div class="rounded-full w-14 h-14 mx-auto flex items-center justify-center bg-rose-100 border-2 border-rose-400">
+    <div i-carbon:building-insights-1 class="text-2xl text-rose-600"/>
+  </div>
+  <div class="mt-1 font-bold text-xs">Policymakers</div>
+  <div class="text-xs text-gray-500 max-w-24">Health regulations</div>
+</div>
+
+<div class="text-center">
+  <div class="rounded-full w-14 h-14 mx-auto flex items-center justify-center bg-teal-100 border-2 border-teal-400">
+    <div i-carbon:events class="text-2xl text-teal-600"/>
+  </div>
+  <div class="mt-1 font-bold text-xs">Communities</div>
+  <div class="text-xs text-gray-500 max-w-24">Advocate for change</div>
+</div>
+
+</div>
+
+</div>
+
+<div class="mt-3 text-center text-sm text-gray-500">
+  <strong>Everyone</strong> deserves to know what their environment is doing to them
 </div>
 
 ---
