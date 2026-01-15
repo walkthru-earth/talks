@@ -1106,69 +1106,85 @@ flowchart LR
 layout: center
 ---
 
+<div class="flex items-center justify-center gap-16">
+
+<!-- Left: Content -->
 <div class="text-center">
 
-<img src="/icon.svg" class="h-24 mx-auto mb-6" />
+<img src="/icon.svg" class="h-20 mx-auto mb-4" />
 
 # Join the Path
 
-<div class="mt-8 grid grid-cols-3 gap-6 max-w-2xl mx-auto">
+<div class="mt-6 grid grid-cols-3 gap-4 max-w-xl">
 
-<div class="rounded-lg border-2 border-solid p-4 backdrop-blur bg-opacity-10 border-green-500 bg-green-50">
+<div class="rounded-lg border-2 border-solid p-3 backdrop-blur bg-opacity-10 border-green-500 bg-green-50">
   <a href="https://opensensor.space/join-network/" target="_blank" class="no-underline text-inherit block">
-    <div i-carbon:iot-connect class="text-3xl text-green-500 mx-auto" />
-    <div class="mt-2 text-sm font-medium">Deploy a Sensor</div>
+    <div i-carbon:iot-connect class="text-2xl text-green-500 mx-auto" />
+    <div class="mt-1 text-xs font-medium">Deploy a Sensor</div>
   </a>
 </div>
 
-<div class="rounded-lg border-2 border-solid p-4 backdrop-blur bg-opacity-10 border-amber-500 bg-amber-50">
+<div class="rounded-lg border-2 border-solid p-3 backdrop-blur bg-opacity-10 border-amber-500 bg-amber-50">
   <a href="https://source.coop/walkthru-earth" target="_blank" class="no-underline text-inherit block">
-    <img src="https://walkthru.earth/source-coop-logo.png" class="h-8 w-8 mx-auto" alt="Source Cooperative" />
-    <div class="mt-2 text-sm font-medium">Access Our Data</div>
+    <img src="https://walkthru.earth/source-coop-logo.png" class="h-6 w-6 mx-auto" alt="Source Cooperative" />
+    <div class="mt-1 text-xs font-medium">Access Our Data</div>
   </a>
 </div>
 
-<div class="rounded-lg border-2 border-solid p-4 backdrop-blur bg-opacity-10 border-blue-500 bg-blue-50">
+<div class="rounded-lg border-2 border-solid p-3 backdrop-blur bg-opacity-10 border-blue-500 bg-blue-50">
   <a href="https://github.com/walkthru-earth" target="_blank" class="no-underline text-inherit block">
-    <div i-carbon:logo-github class="text-3xl text-blue-500 mx-auto" />
-    <div class="mt-2 text-sm font-medium">Follow the Journey</div>
+    <div i-carbon:logo-github class="text-2xl text-blue-500 mx-auto" />
+    <div class="mt-1 text-xs font-medium">Follow the Journey</div>
   </a>
 </div>
 
 </div>
 
-<div class="mt-10 space-y-2">
-  <a href="https://walkthru.earth" target="_blank" class="text-2xl font-bold no-underline" style="color: hsl(158 64% 52%)">walkthru.earth</a>
-  <div class="text-gray-500">
+<div class="mt-6 space-y-1">
+  <a href="https://walkthru.earth" target="_blank" class="text-xl font-bold no-underline" style="color: hsl(158 64% 52%)">walkthru.earth</a>
+  <div class="text-gray-500 text-sm">
     <a href="mailto:hi@walkthru.earth" class="text-gray-500 no-underline hover:underline">hi@walkthru.earth</a>
   </div>
 </div>
 
-<div class="mt-6 flex flex-wrap justify-center items-center gap-3">
+<div class="mt-4 flex flex-wrap justify-center items-center gap-2">
   <a href="https://www.linkedin.com/company/walkthru-earth/" target="_blank" class="text-gray-400 hover:text-blue-600 transition-colors" title="LinkedIn">
-    <div i-carbon:logo-linkedin class="text-2xl" />
+    <div i-carbon:logo-linkedin class="text-xl" />
   </a>
   <a href="https://www.youtube.com/@walkthru-earth/" target="_blank" class="text-gray-400 hover:text-red-500 transition-colors" title="YouTube">
-    <div i-carbon:logo-youtube class="text-2xl" />
+    <div i-carbon:logo-youtube class="text-xl" />
   </a>
   <a href="https://www.instagram.com/walkthru.earth" target="_blank" class="text-gray-400 hover:text-pink-500 transition-colors" title="Instagram">
-    <div i-carbon:logo-instagram class="text-2xl" />
+    <div i-carbon:logo-instagram class="text-xl" />
   </a>
   <a href="https://www.tiktok.com/@walkthru.earth" target="_blank" class="text-gray-400 hover:text-gray-800 transition-colors" title="TikTok">
-    <div i-simple-icons:tiktok class="text-xl" />
+    <div i-simple-icons:tiktok class="text-lg" />
   </a>
   <a href="https://www.facebook.com/walkthru.earth" target="_blank" class="text-gray-400 hover:text-blue-500 transition-colors" title="Facebook">
-    <div i-carbon:logo-facebook class="text-2xl" />
+    <div i-carbon:logo-facebook class="text-xl" />
   </a>
   <a href="https://x.com/walkthru_earth" target="_blank" class="text-gray-400 hover:text-gray-800 transition-colors" title="X">
-    <div i-carbon:logo-x class="text-2xl" />
+    <div i-carbon:logo-x class="text-xl" />
   </a>
   <a href="https://bsky.app/profile/walkthru.earth" target="_blank" class="text-gray-400 hover:text-blue-400 transition-colors" title="Bluesky">
-    <div i-simple-icons:bluesky class="text-xl" />
+    <div i-simple-icons:bluesky class="text-lg" />
   </a>
   <a href="https://source.coop/walkthru-earth" target="_blank" class="opacity-60 hover:opacity-100 transition-opacity" title="Source Cooperative">
-    <img src="https://walkthru.earth/source-coop-logo.png" class="h-6 w-6" alt="Source Cooperative" />
+    <img src="https://walkthru.earth/source-coop-logo.png" class="h-5 w-5" alt="Source Cooperative" />
   </a>
+</div>
+
+</div>
+
+<!-- Right: Large QR Code -->
+<div class="flex flex-col items-center">
+  <div class="rounded-2xl border-4 border-green-400 bg-white p-4 shadow-xl">
+    <img src="/qr-links.svg" class="w-64 h-64" alt="Scan to connect" />
+  </div>
+  <div class="mt-4 text-center">
+    <div class="text-lg font-semibold" style="color: hsl(158 64% 42%)">Scan to Connect</div>
+    <div class="text-sm text-gray-500">All links + these slides</div>
+  </div>
 </div>
 
 </div>
