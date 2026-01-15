@@ -381,44 +381,89 @@ flowchart LR
 
 # Hormones & Cities App
 
-<div class="text-lg text-gray-600 mb-4 text-center">
+<div class="text-base text-gray-600 mb-2 text-center">
 Capturing the <strong>human experience</strong> of your city — completely anonymously
 </div>
 
-<div class="grid grid-cols-3 gap-6 px-4">
+<div class="grid grid-cols-3 gap-6 px-16">
 
 <div class="text-center">
-  <img src="/hormones-cities-survey.png" class="h-72 mx-auto rounded-xl shadow-lg border border-gray-200" />
-  <div class="mt-3 font-semibold text-sm">Survey Categories</div>
-  <div class="text-xs text-gray-500">Housing, wellbeing, community, environment</div>
+  <div class="relative mx-auto w-32 h-72 rounded-2xl overflow-hidden shadow-xl border-4 border-gray-800 bg-gray-800">
+    <div class="absolute inset-0 overflow-hidden">
+      <img
+        v-motion
+        :initial="{ y: 0 }"
+        :enter="{ y: -60, transition: { duration: 6000, repeat: Infinity, repeatType: 'mirror', repeatDelay: 2000 } }"
+        src="/hormones-cities-survey.png"
+        class="w-full"
+      />
+    </div>
+    <div class="absolute top-0 left-0 right-0 h-6 bg-gradient-to-b from-gray-800 to-transparent"></div>
+    <div class="absolute bottom-0 left-0 right-0 h-6 bg-gradient-to-t from-gray-800 to-transparent"></div>
+    <div class="absolute bottom-1.5 left-0 right-0 flex justify-center">
+      <div class="w-14 h-1 bg-white rounded-full opacity-60"></div>
+    </div>
+  </div>
+  <div class="mt-2 font-semibold text-sm">Survey Categories</div>
+  <div class="text-xs text-gray-500">Housing, wellbeing, community</div>
 </div>
 
 <div class="text-center">
-  <img src="/hormones-cities-ai.png" class="h-72 mx-auto rounded-xl shadow-lg border border-gray-200" />
-  <div class="mt-3 font-semibold text-sm">AI Reflection</div>
-  <div class="text-xs text-gray-500">Guided conversations about your day</div>
+  <div class="relative mx-auto w-32 h-72 rounded-2xl overflow-hidden shadow-xl border-4 border-gray-800 bg-gray-800">
+    <div class="absolute inset-0 overflow-hidden">
+      <img
+        v-motion
+        :initial="{ y: 0 }"
+        :enter="{ y: -40, transition: { duration: 5000, repeat: Infinity, repeatType: 'mirror', repeatDelay: 2500 } }"
+        src="/hormones-cities-ai.png"
+        class="w-full"
+      />
+    </div>
+    <div class="absolute top-0 left-0 right-0 h-6 bg-gradient-to-b from-gray-800 to-transparent"></div>
+    <div class="absolute bottom-0 left-0 right-0 h-6 bg-gradient-to-t from-gray-800 to-transparent"></div>
+    <div class="absolute bottom-1.5 left-0 right-0 flex justify-center">
+      <div class="w-14 h-1 bg-white rounded-full opacity-60"></div>
+    </div>
+  </div>
+  <div class="mt-2 font-semibold text-sm">AI Reflection</div>
+  <div class="text-xs text-gray-500">Guided conversations</div>
 </div>
 
 <div class="text-center">
-  <img src="/hormones-cities-dashboard.png" class="h-72 mx-auto rounded-xl shadow-lg border border-gray-200" />
-  <div class="mt-3 font-semibold text-sm">City Pulse Dashboard</div>
-  <div class="text-xs text-gray-500">See trends across your community</div>
+  <div class="relative mx-auto w-32 h-72 rounded-2xl overflow-hidden shadow-xl border-4 border-gray-800 bg-gray-800">
+    <div class="absolute inset-0 overflow-hidden">
+      <img
+        v-motion
+        :initial="{ y: 0 }"
+        :enter="{ y: -50, transition: { duration: 5500, repeat: Infinity, repeatType: 'mirror', repeatDelay: 1500 } }"
+        src="/hormones-cities-dashboard.png"
+        class="w-full"
+      />
+    </div>
+    <div class="absolute top-0 left-0 right-0 h-6 bg-gradient-to-b from-gray-800 to-transparent"></div>
+    <div class="absolute bottom-0 left-0 right-0 h-6 bg-gradient-to-t from-gray-800 to-transparent"></div>
+    <div class="absolute bottom-1.5 left-0 right-0 flex justify-center">
+      <div class="w-14 h-1 bg-white rounded-full opacity-60"></div>
+    </div>
+  </div>
+  <div class="mt-2 font-semibold text-sm">City Pulse Dashboard</div>
+  <div class="text-xs text-gray-500">Community trends</div>
 </div>
 
 </div>
 
-<div class="mt-4 flex justify-center gap-8 text-sm">
-  <div class="flex items-center gap-2 text-green-600">
-    <div i-carbon:checkmark-filled class="text-lg"/>
+<div class="mt-2 flex justify-center gap-6 text-sm">
+  <div class="flex items-center gap-1.5 text-green-600">
+    <div i-carbon:checkmark-filled />
     <span>No account required</span>
   </div>
-  <div class="flex items-center gap-2 text-green-600">
-    <div i-carbon:checkmark-filled class="text-lg"/>
+  <div class="flex items-center gap-1.5 text-green-600">
+    <div i-carbon:checkmark-filled />
     <span>No personal data stored</span>
   </div>
-  <div class="flex items-center gap-2 text-green-600">
-    <div i-carbon:checkmark-filled class="text-lg"/>
-    <span>Location aggregated to neighborhood</span>
+  <div class="flex items-center gap-1.5 text-green-600">
+    <div i-carbon:checkmark-filled />
+    <span>Location aggregated</span>
   </div>
 </div>
 
