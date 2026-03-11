@@ -14,36 +14,22 @@ concurrency:
   group: pages
   cancel-in-progress: false
 
-env:
-  STORE_PATH: ""
-
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
-      - uses: actions/setup-node@v4
+      - uses: pnpm/action-setup@v4
         with:
-          node-version: "lts/*"
-
-      - uses: pnpm/action-setup@v2
-        with:
+          version: 10.11.0
           run_install: false
 
-      - name: Obtain pnpm store directory
-        shell: bash
-        run: |
-          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
-
-      - name: Configure pnpm cache
-        uses: actions/cache@v4
+      - uses: actions/setup-node@v6
         with:
-          path: ${{ env.STORE_PATH }}
-          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-store-
+          node-version: "lts/*"
+          cache: "pnpm"
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
@@ -55,12 +41,36 @@ jobs:
           VITE_POSTHOG_HOST: ${{ secrets.VITE_POSTHOG_HOST }}
         run: pnpm run packages:build-base
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
+      - name: Verify build output
+        run: |
+          if [ ! -f "dist/index.html" ]; then
+            echo "Build failed: dist/index.html not found"
+            exit 1
+          fi
+          echo "Build successful - found dist/index.html"
+          echo "Build artifacts:"
+          ls -lh dist/
 
-      - uses: actions/upload-pages-artifact@v3
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v4
         with:
           path: dist
+
+      - name: Generate job summary
+        run: |
+          echo "## Build Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Build completed successfully" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Presentations Built:" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          find dist -name "index.html" -not -path "dist/index.html" | while read file; do
+            dir=$(dirname "$file" | sed 's/dist\///')
+            echo "- \`$dir\`" >> $GITHUB_STEP_SUMMARY
+          done
 
   deploy:
     environment:
