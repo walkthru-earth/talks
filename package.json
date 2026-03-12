@@ -12,14 +12,14 @@
     "packages:build-base": "pnpm cleanup:dist && pnpm -r --filter=./packages/* run build-base && pnpm build:index"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^7.7.0",
+    "@antfu/eslint-config": "^7.7.2",
     "@antfu/ni": "^28.3.0",
     "@slidev/cli": "^52.14.1",
     "@slidev/client": "^52.14.1",
     "@slidev/theme-default": "latest",
     "@slidev/theme-seriph": "latest",
     "@slidev/types": "52.14.1",
-    "@types/node": "^25.4.0",
+    "@types/node": "^25.5.0",
     "@types/seedrandom": "^3.0.8",
     "@unocss/core": "^66.6.6",
     "@unocss/eslint-config": "^66.6.6",
