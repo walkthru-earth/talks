@@ -138,7 +138,7 @@ importers:
   packages/walkthru-earth-intro:
     dependencies:
       hyparquet:
-        specifier: ^1.25.6
+        specifier: ^1.25.8
         version: 1.25.8
       hyparquet-compressors:
         specifier: ^1.1.1
@@ -154,13 +154,13 @@ importers:
         specifier: ^1.2.7
         version: 1.2.7
       '@iconify-json/carbon':
-        specifier: ^1.2.20
+        specifier: ^1.2.21
         version: 1.2.21
       '@iconify-json/devicon':
         specifier: ^1.2.62
         version: 1.2.62
       '@iconify-json/fluent':
-        specifier: ^1.2.46
+        specifier: ^1.2.47
         version: 1.2.47
       '@iconify-json/icon-park-outline':
         specifier: ^1.2.4
@@ -184,7 +184,7 @@ importers:
         specifier: ^1.2.5
         version: 1.2.5
       '@types/three':
-        specifier: ^0.184.0
+        specifier: ^0.184.1
         version: 0.184.1
       playwright-chromium:
         specifier: ^1.59.1
