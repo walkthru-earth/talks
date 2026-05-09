@@ -320,7 +320,7 @@ A browser based spatial intelligence engine. Everything runs client side. No ser
 zoom: 1.2
 ---
 
-# OpenSensor.space, Live in Cairo
+# OpenSensor.space, Live in Cairo and Canada
 
 <div class="mt-2 px-6">
 
@@ -330,12 +330,12 @@ Our environmental sensing layer is <strong>already deployed</strong>. Real time 
 
 <div class="grid grid-cols-3 gap-4">
 
-<div class="col-span-2 rounded-xl overflow-hidden border-2 border-green-400" style="height: 340px;">
+<div class="col-span-2 rounded-xl overflow-hidden border-2 border-green-400 relative" style="height: 340px;">
   <iframe
     src="https://opensensor.space/"
-    class="w-full h-full"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope"
+    style="width: 1280px; height: 800px; border: 0; transform: scale(0.6); transform-origin: top left;"
   ></iframe>
 </div>
 
@@ -369,7 +369,7 @@ Our environmental sensing layer is <strong>already deployed</strong>. Real time 
   <div class="flex gap-4 text-sm">
     <div class="flex items-center gap-1.5 text-green-600">
       <div i-carbon:checkmark-filled />
-      <span>2 stations live in Cairo</span>
+      <span>Stations live in Cairo and Canada</span>
     </div>
     <div class="flex items-center gap-1.5 text-green-600">
       <div i-carbon:checkmark-filled />
