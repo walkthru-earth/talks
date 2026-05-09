@@ -510,7 +510,7 @@ async function main() {
             // Assuming base path follows the pattern /talks/<pkgName>/
             const url = `./${pkgName}/`;
             
-            // Format title: "walkthru-earth-template" -> "Walkthru Earth Template"
+            // Format title: "walkthru-earth-intro" -> "Walkthru Earth Intro"
             const title = pkgName
                 .split('-')
                 .map(word => word.charAt(0).toUpperCase() + word.slice(1))

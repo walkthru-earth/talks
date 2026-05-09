@@ -1,6 +1,6 @@
-# WalkThru Earth Slidev Template
+# Walkthru Earth Intro
 
-A professionally designed presentation template for WalkThru Earth, featuring our brand colors, Quicksand typography, and earth-toned aesthetic.
+The canonical Walkthru.earth introduction deck, urban intelligence infrastructure for cities. Also the design baseline that other talks copy from, featuring our brand colors, Quicksand typography, and earth-toned aesthetic.
 
 ![WalkThru Earth](public/icon.svg)
 
@@ -121,7 +121,7 @@ Use `v-click` for click-to-reveal animations:
 ## File Structure
 
 ```
-walkthru-earth-template/
+walkthru-earth-intro/
 ├── slides.md          # Your presentation content
 ├── style.css          # Brand colors and styles
 ├── uno.config.ts      # UnoCSS configuration

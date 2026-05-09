@@ -1,25 +1,33 @@
 {
-  "name": "walkthru-earth-template",
+  "name": "walkthru-earth-intro",
   "type": "module",
   "private": true,
+  "description": "Walkthru.earth Intro, Urban Intelligence Infrastructure",
   "scripts": {
     "build": "slidev build",
-    "build-base": "slidev build --out ../../dist/walkthru-earth-template --base /talks/walkthru-earth-template/",
+    "build-base": "slidev build --out ../../dist/walkthru-earth-intro --base /talks/walkthru-earth-intro/",
     "dev": "slidev --open --remote",
     "export": "slidev export --with-clicks --per-slide --wait-until none"
   },
+  "dependencies": {
+    "hyparquet": "^1.25.6",
+    "hyparquet-compressors": "^1.1.1",
+    "maplibre-gl": "^5.24.0",
+    "three": "^0.184.0"
+  },
   "devDependencies": {
     "@iconify-json/bi": "^1.2.7",
-    "@iconify-json/carbon": "^1.2.19",
-    "@iconify-json/devicon": "^1.2.60",
-    "@iconify-json/fluent": "^1.2.40",
+    "@iconify-json/carbon": "^1.2.20",
+    "@iconify-json/devicon": "^1.2.62",
+    "@iconify-json/fluent": "^1.2.46",
     "@iconify-json/icon-park-outline": "^1.2.4",
-    "@iconify-json/logos": "^1.2.10",
+    "@iconify-json/logos": "^1.2.11",
     "@iconify-json/ph": "^1.2.2",
     "@iconify-json/ri": "^1.2.10",
-    "@iconify-json/simple-icons": "^1.2.73",
+    "@iconify-json/simple-icons": "^1.2.81",
     "@iconify-json/svg-spinners": "^1.2.4",
     "@iconify-json/twemoji": "^1.2.5",
-    "playwright-chromium": "^1.58.2"
+    "@types/three": "^0.184.0",
+    "playwright-chromium": "^1.59.1"
   }
 }

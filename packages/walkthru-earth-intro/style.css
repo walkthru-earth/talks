@@ -134,3 +134,26 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+/* Canvas is 1280x720 (see canvasWidth + aspectRatio in deck frontmatter).
+ * Slidev's default layout css sets font-size: 1.1rem, which leaves dense
+ * markdown slides looking shrunken on the larger canvas. We override with
+ * a higher root size and use zoom to scale fixed-size embeds (mermaid,
+ * iconify icons, raster images) that don't follow rem units. */
+.slidev-layout {
+  overflow: hidden;
+  font-size: 1.7rem !important;
+}
+
+/* Full-bleed slot for slides that should occupy the entire canvas with no
+ * default layout padding (used by layout: full plus a positioned child). */
+.slide-fit {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /* Inside .slide-fit we want absolute control of dimensions, so undo the
+   * scale-up. The HNC explorer relies on this to keep its compact sizing. */
+  font-size: 1rem;
+}

@@ -77,7 +77,7 @@ When you run `node scripts/generate-index.js` or any build command, the followin
 ### Local Development
 
 ```bash
-cd packages/walkthru-earth-template
+cd packages/walkthru-earth-intro
 pnpm dev
 ```
 
@@ -112,7 +112,7 @@ Navigate to your presentation and verify analytics tracking in:
 2. **Verify files were copied:**
 
    ```bash
-   ls -la packages/walkthru-earth-template/*.{vue,ts}
+   ls -la packages/walkthru-earth-intro/*.{vue,ts}
    ```
 
 3. **Check browser console for errors**

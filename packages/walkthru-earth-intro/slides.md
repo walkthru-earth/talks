@@ -4,7 +4,7 @@ highlighter: shiki
 css: unocss
 colorSchema: light
 transition: fade-out
-title: Walkthru.earth - Cities Built for People
+title: Walkthru.earth, Urban Intelligence Infrastructure
 favicon: /favicon.png
 lineNumbers: false
 drawings:
@@ -13,6 +13,8 @@ mdc: true
 clicks: 0
 preload: false
 routerMode: hash
+canvasWidth: 1280
+aspectRatio: 16/9
 ---
 
 <div class="text-center">
@@ -22,110 +24,106 @@ routerMode: hash
 # Walkthru.earth
 
 <div class="text-2xl mt-4 text-gray-600">
-Cities Built for People
+Urban Intelligence Infrastructure
 </div>
 
-<div class="mt-8 text-lg text-gray-500">
-Revealing the hidden patterns of daily life
+<div class="mt-8 text-lg italic" style="color: hsl(158 64% 42%)">
+"What is the city doing to the people inside it?"
 </div>
 
 <div class="mt-12 flex justify-center gap-4">
   <a href="https://walkthru.earth" target="_blank" class="btn btn-primary btn-pill btn-sm">
-    Visit Website
+    walkthru.earth
   </a>
   <a href="https://opensensor.space" target="_blank" class="btn btn-outline btn-pill btn-sm">
-    OpenSensor.Space
+    opensensor.space
   </a>
 </div>
 
+<div class="mt-10 text-sm text-gray-500">
+Open source, starting in Cairo, designed to work anywhere
 </div>
+
+<div class="mt-8 flex flex-col items-center gap-1 swipe-hint">
+  <div class="text-xs uppercase tracking-widest" style="color: hsl(158 30% 45%)">Swipe to begin</div>
+  <div class="flex items-center gap-1 text-2xl">
+    <div i-carbon:chevron-right class="chev chev-1"/>
+    <div i-carbon:chevron-right class="chev chev-2"/>
+    <div i-carbon:chevron-right class="chev chev-3"/>
+  </div>
+</div>
+
+</div>
+
+<style scoped>
+.chev {
+  color: hsl(158 64% 42%);
+  opacity: 0.2;
+  animation: chev-pulse 1.6s ease-in-out infinite;
+}
+.chev-2 { animation-delay: 0.2s; }
+.chev-3 { animation-delay: 0.4s; }
+@keyframes chev-pulse {
+  0%, 100% { opacity: 0.2; transform: translateX(-4px); }
+  50%      { opacity: 1;   transform: translateX(4px); }
+}
+.swipe-hint {
+  pointer-events: none;
+}
+</style>
 
 ---
-
-<div class="text-center">
-
-# The City is Processing You
-
-<div class="mt-8 text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-
-**Every day, you walk through your city.** You notice the traffic, the buildings, and the shops, but you likely don't notice what the environment is doing to **you**.
-
-</div>
-
-<div class="mt-12 flex justify-center gap-8">
-  <div class="flex flex-col items-center">
-    <div i-carbon:pedestrian class="text-5xl text-green-500" />
-    <span class="text-sm mt-2 text-gray-500">Walking</span>
-  </div>
-  <div i-carbon:arrow-right class="text-3xl text-gray-300 self-center" />
-  <div class="flex flex-col items-center">
-    <div i-carbon:analytics class="text-5xl text-amber-500" />
-    <span class="text-sm mt-2 text-gray-500">Processing</span>
-  </div>
-  <div i-carbon:arrow-right class="text-3xl text-gray-300 self-center" />
-  <div class="flex flex-col items-center">
-    <div i-carbon:health-cross class="text-5xl text-red-400" />
-    <span class="text-sm mt-2 text-gray-500">Impact</span>
-  </div>
-</div>
-
-<div class="mt-12 text-lg" style="color: hsl(158 64% 52%)">
-  <strong>Walkthru.earth</strong> believes cities should be built for <strong>people</strong>
-</div>
-
-</div>
-
-<div w-full absolute bottom-0 left-0 flex items-center transform="translate-x--10 translate-y--10">
-  <div w-full flex items-center justify-end gap-4>
-    <img src="/icon.svg" h-8>
-  </div>
-</div>
-
+zoom: 1.2
 ---
 
-# The Invisible Problem
+# We are unaware of what cities do to us
 
-<div class="grid grid-cols-2 gap-12 mt-8 px-12">
+<div class="grid grid-cols-2 gap-10 mt-6 px-10">
 
 <div>
 
-<div class="text-xl text-gray-600 leading-relaxed">
+<div class="text-lg text-gray-700 leading-relaxed">
 
-**Current cities are measured by spreadsheets, not feelings.**
+Cities are measured obsessively. GDP, property values, traffic congestion, satellite imagery, mobility patterns.
 
-We track GDP, property values, and traffic flow, but these metrics tell us nothing about whether:
+None of those numbers tell you whether the air your child breathes is safe, whether the noise on your street is keeping your cortisol elevated, or whether your neighbourhood is actually liveable.
 
 </div>
 
-<div class="mt-6 space-y-4">
-  <div class="flex items-center gap-3">
-    <div i-carbon:close-filled class="text-2xl text-red-400" />
-    <span>A child is thriving</span>
+<div class="mt-6 text-base font-medium" style="color: hsl(158 64% 42%)">
+We optimise for economic output, then wonder why people feel worse.
+</div>
+
+</div>
+
+<div class="space-y-3">
+
+<div class="rounded-xl border-2 p-4 border-red-300 bg-red-50">
+  <div class="flex items-center gap-3 mb-1">
+    <div i-carbon:wind-stream class="text-2xl text-red-400"/>
+    <div class="font-bold text-sm text-red-700">Air your child breathes</div>
   </div>
-  <div class="flex items-center gap-3">
-    <div i-carbon:close-filled class="text-2xl text-red-400" />
-    <span>A resident is chronically stressed</span>
+  <div class="text-xs text-gray-600">No neighbourhood scale visibility into PM2.5, ozone, or particulates.</div>
+</div>
+
+<div class="rounded-xl border-2 p-4 border-amber-300 bg-amber-50">
+  <div class="flex items-center gap-3 mb-1">
+    <div i-carbon:volume-up class="text-2xl text-amber-500"/>
+    <div class="font-bold text-sm text-amber-700">Noise that raises cortisol</div>
   </div>
-  <div class="flex items-center gap-3">
-    <div i-carbon:close-filled class="text-2xl text-red-400" />
-    <span>A neighborhood is truly livable</span>
+  <div class="text-xs text-gray-600">Chronic stress signals are invisible to GDP and traffic counts.</div>
+</div>
+
+<div class="rounded-xl border-2 p-4 border-purple-300 bg-purple-50">
+  <div class="flex items-center gap-3 mb-1">
+    <div i-carbon:home class="text-2xl text-purple-500"/>
+    <div class="font-bold text-sm text-purple-700">Neighbourhoods quietly wearing people down</div>
   </div>
+  <div class="text-xs text-gray-600">Heat, density, infrastructure strain interact, no one is measuring it.</div>
 </div>
 
-</div>
-
-<div class="rounded-xl border-2 p-6 backdrop-blur bg-opacity-10 border-red-400 bg-red-50">
-
-<div class="text-center mb-4">
-  <div i-carbon:warning-alt class="text-5xl text-red-400" />
-</div>
-
-<div class="text-lg font-semibold text-center mb-4">Survival Mode</div>
-
-<div class="text-sm text-gray-600 leading-relaxed">
-Because we ignore these "hidden patterns," our bodies often stay in <strong>survival mode</strong>.
-
-Chronic noise and pollution keep our **cortisol levels high** and our nervous systems on edge.
+<div class="text-center text-sm text-gray-500 pt-2">
+When the signal is invisible, cities make billion dollar decisions with incomplete information.
 </div>
 
 </div>
@@ -138,38 +136,40 @@ layout: center
 
 <div class="max-w-3xl mx-auto">
 
-<div class="text-center mb-8">
-  <div i-carbon:idea class="text-6xl text-amber-500" />
+<div class="text-center mb-6">
+  <div i-carbon:activity class="text-6xl text-amber-500" />
 </div>
 
-# The Analogy
+# A Fitness Tracker for Cities
 
-<div class="mt-8 rounded-xl border-2 p-8 backdrop-blur bg-opacity-10 border-green-500 bg-green-50">
+<div class="mt-6 rounded-xl border-2 p-8 backdrop-blur bg-opacity-10 border-green-500 bg-green-50">
 
-<div class="text-xl text-gray-700 leading-relaxed">
-
-Today, cities only check their **"bank balance" (GDP)** to see if they are doing well.
-
+<div class="text-lg text-gray-700 leading-relaxed text-center">
+Today, cities only check their <strong>bank balance</strong>, GDP, to see if they are doing well.
 </div>
 
 <div class="mt-6 flex items-center justify-center gap-6">
   <div class="text-center">
     <div i-carbon:currency-dollar class="text-5xl text-gray-400" />
-    <div class="text-sm mt-2 text-gray-500">GDP Only</div>
+    <div class="text-xs mt-1 text-gray-500">GDP only</div>
   </div>
   <div i-carbon:arrow-right class="text-3xl text-green-500" />
   <div class="text-center">
-    <div i-carbon:activity class="text-5xl text-green-500" />
-    <div class="text-sm mt-2 text-green-600 font-medium">Full Health</div>
+    <div i-carbon:favorite class="text-5xl text-rose-500" />
+    <div class="text-xs mt-1 text-gray-600">Heart rate</div>
+  </div>
+  <div class="text-center">
+    <div i-carbon:meter class="text-5xl text-amber-500" />
+    <div class="text-xs mt-1 text-gray-600">Stress</div>
+  </div>
+  <div class="text-center">
+    <div i-carbon:health-cross class="text-5xl text-green-500" />
+    <div class="text-xs mt-1 text-gray-600">Recovery</div>
   </div>
 </div>
 
-<div class="mt-6 text-xl text-center font-semibold" style="color: hsl(158 64% 52%)">
-Walkthru.earth is like a fitness tracker for the whole city.
-</div>
-
-<div class="mt-4 text-gray-600 text-center">
-We allow a city to finally check its <strong>"heart rate"</strong> and <strong>"stress levels"</strong> so it can actually help the people inside it get healthy.
+<div class="mt-6 text-xl text-center font-semibold" style="color: hsl(158 64% 42%)">
+Walkthru.earth gives a whole city continuous health observability, at neighbourhood resolution, in real time.
 </div>
 
 </div>
@@ -177,221 +177,160 @@ We allow a city to finally check its <strong>"heart rate"</strong> and <strong>"
 </div>
 
 ---
-layout: center
+zoom: 1.2
 ---
 
-<div class="text-center max-w-3xl mx-auto">
+# Three Open Layers, One Platform
 
-# Making the Invisible Visible
+<div class="mt-2 px-4">
 
-<div class="mt-8 text-2xl font-semibold" style="color: hsl(158 64% 52%)">
-Our mission is simple:
-</div>
+<div class="grid grid-cols-3 gap-4">
 
-<div class="mt-4 text-xl text-gray-700 italic">
-"Reveal the hidden patterns of daily life and turn them into solutions."
-</div>
-
-<div class="mt-12 grid grid-cols-3 gap-6">
-
-<div class="rounded-lg border-2 border-solid p-4 backdrop-blur bg-opacity-10 border-blue-400 bg-blue-50">
-  <div i-carbon:wind-stream class="text-4xl text-blue-500 mx-auto" />
-  <div class="mt-2 text-sm font-medium">Air Quality</div>
-</div>
-
-<div class="rounded-lg border-2 border-solid p-4 backdrop-blur bg-opacity-10 border-purple-400 bg-purple-50">
-  <div i-carbon:volume-up class="text-4xl text-purple-500 mx-auto" />
-  <div class="mt-2 text-sm font-medium">Noise > 65dB</div>
-</div>
-
-<div class="rounded-lg border-2 border-solid p-4 backdrop-blur bg-opacity-10 border-green-400 bg-green-50">
-  <div i-carbon:tree class="text-4xl text-green-500 mx-auto" />
-  <div class="mt-2 text-sm font-medium">Green Space</div>
-</div>
-
-</div>
-
-<div class="mt-10 text-lg text-gray-600">
-We provide the <strong>"human layer"</strong> of urban intelligence
-</div>
-
-</div>
-
----
-
-# How We Do It
-
-<div class="text-lg text-gray-600 mb-6">
-To measure what matters, we've built <strong>three complementary tools</strong> — each capturing a different dimension of urban life:
-</div>
-
-<div class="grid grid-cols-3 gap-6 px-4">
-
-<div class="rounded-xl border-2 border-solid p-6 backdrop-blur bg-opacity-10 border-green-500 bg-green-500 h-full">
-  <div class="flex justify-center mb-4">
-    <div i-carbon:iot-platform class="text-6xl text-green-600"/>
+<div class="rounded-xl border-2 border-solid p-5 border-blue-500 bg-blue-50 h-full flex flex-col">
+  <div class="flex items-center gap-2 mb-2">
+    <div i-carbon:earth class="text-4xl text-blue-600"/>
+    <div class="font-bold text-blue-700 text-lg">Globe Explorer</div>
   </div>
-  <div class="text-center font-bold text-lg mb-2">OpenSensor.Space</div>
-  <div class="text-center text-sm text-gray-600">
-    A network of DIY stations providing <strong>real-time data</strong> on air, noise, and light
+  <div class="text-xs uppercase tracking-wide text-blue-600 font-semibold mb-2">Spatial intelligence</div>
+  <div class="text-sm text-gray-700 leading-relaxed flex-grow">
+    23 planetary indices. 300GB of terrain, population, buildings, and weather, joinable in a single SQL query, running directly in your browser.
   </div>
-  <div class="text-center text-xs text-green-700 mt-2 font-medium">✓ Live with 2 stations</div>
+  <div class="mt-3 text-xs font-medium text-blue-700 flex items-center gap-1">
+    <div i-carbon:checkmark-filled class="text-blue-500"/> Public preview
+  </div>
 </div>
 
-<div class="rounded-xl border-2 border-solid p-6 backdrop-blur bg-opacity-10 border-amber-500 bg-amber-500 h-full">
-  <div class="flex justify-center mb-4">
-    <div i-carbon:chart-radar class="text-6xl text-amber-600"/>
+<div class="rounded-xl border-2 border-solid p-5 border-green-500 bg-green-50 h-full flex flex-col">
+  <div class="flex items-center gap-2 mb-2">
+    <div i-carbon:iot-platform class="text-4xl text-green-600"/>
+    <div class="font-bold text-green-700 text-lg">OpenSensor.space</div>
   </div>
-  <div class="text-center font-bold text-lg mb-2">Livability Index</div>
-  <div class="text-center text-sm text-gray-600">
-    A score based on <strong>50+ factors</strong> including food, water, and school access
+  <div class="text-xs uppercase tracking-wide text-green-600 font-semibold mb-2">Environmental sensing</div>
+  <div class="text-sm text-gray-700 leading-relaxed flex-grow">
+    A distributed network of low cost IoT sensors streaming real time air quality directly from street level. Hardware agnostic, serverless, anyone can join.
   </div>
-  <div class="text-center text-xs text-amber-700 mt-2 font-medium">In development</div>
+  <div class="mt-3 text-xs font-medium text-green-700 flex items-center gap-1">
+    <div i-carbon:checkmark-filled class="text-green-500"/> Live in Cairo, 1+ year of data
+  </div>
 </div>
 
-<div class="rounded-xl border-2 border-solid p-6 backdrop-blur bg-opacity-10 border-rose-400 bg-rose-400 h-full">
-  <div class="flex justify-center mb-4">
-    <div i-carbon:face-satisfied class="text-6xl text-rose-500"/>
+<div class="rounded-xl border-2 border-solid p-5 border-rose-500 bg-rose-50 h-full flex flex-col">
+  <div class="flex items-center gap-2 mb-2">
+    <div i-carbon:face-satisfied class="text-4xl text-rose-600"/>
+    <div class="font-bold text-rose-700 text-lg">Hormones & Cities</div>
   </div>
-  <div class="text-center font-bold text-lg mb-2">Hormones & Cities</div>
-  <div class="text-center text-sm text-gray-600">
-    Measuring how urban design affects <strong>human behavior and emotions</strong>
+  <div class="text-xs uppercase tracking-wide text-rose-600 font-semibold mb-2">Lived experience</div>
+  <div class="text-sm text-gray-700 leading-relaxed flex-grow">
+    A privacy first mobile app. Raw data never leaves the phone. What gets shared is an anonymous neighbourhood signal that sharpens as more people contribute.
   </div>
-  <div class="text-center text-xs text-rose-700 mt-2 font-medium">App ready</div>
-</div>
-
-</div>
-
----
-
-# Where Does the Data Come From?
-
-<div class="text-lg text-gray-600 mb-6">
-We combine <strong>three layers</strong> of data to build a complete picture of urban livability
-</div>
-
-<div class="grid grid-cols-3 gap-4 px-2">
-
-<div class="rounded-xl border-2 border-solid p-4 border-green-400 bg-green-50">
-  <div class="flex items-center gap-2 mb-3">
-    <div i-carbon:iot-platform class="text-2xl text-green-500"/>
-    <div class="font-bold text-green-700">IoT Sensors</div>
+  <div class="mt-3 text-xs font-medium text-rose-700 flex items-center gap-1">
+    <div i-carbon:checkmark-filled class="text-rose-500"/> App ready
   </div>
-  <div class="text-xs text-gray-600 space-y-1">
-    <div class="flex items-center gap-1">
-      <div i-carbon:checkmark class="text-green-500 text-sm"/>
-      <span>Raspberry Pi, Jetson, Edge devices</span>
-    </div>
-    <div class="flex items-center gap-1">
-      <div i-carbon:checkmark class="text-green-500 text-sm"/>
-      <span>Air quality (PM2.5, PM10)</span>
-    </div>
-    <div class="flex items-center gap-1">
-      <div i-carbon:checkmark class="text-green-500 text-sm"/>
-      <span>Temperature, humidity, noise</span>
-    </div>
-    <div class="flex items-center gap-1">
-      <div i-carbon:checkmark class="text-green-500 text-sm"/>
-      <span>Light levels (lux)</span>
-    </div>
-  </div>
-  <div class="mt-2 text-xs text-green-600 font-medium">Edge processing → Anonymous upload</div>
-</div>
-
-<div class="rounded-xl border-2 border-solid p-4 border-rose-400 bg-rose-50">
-  <div class="flex items-center gap-2 mb-3">
-    <div i-carbon:mobile class="text-2xl text-rose-500"/>
-    <div class="font-bold text-rose-700">Mobile App</div>
-  </div>
-  <div class="text-xs text-gray-600 space-y-1">
-    <div class="flex items-center gap-1">
-      <div i-carbon:checkmark class="text-rose-500 text-sm"/>
-      <span>Wellbeing surveys (mood, stress)</span>
-    </div>
-    <div class="flex items-center gap-1">
-      <div i-carbon:checkmark class="text-rose-500 text-sm"/>
-      <span>Community feedback</span>
-    </div>
-    <div class="flex items-center gap-1">
-      <div i-carbon:checkmark class="text-rose-500 text-sm"/>
-      <span>AI-guided reflection</span>
-    </div>
-    <div class="flex items-center gap-1">
-      <div i-carbon:checkmark class="text-rose-500 text-sm"/>
-      <span>Location aggregated to H3 cells</span>
-    </div>
-  </div>
-  <div class="mt-2 text-xs text-rose-600 font-medium">100% anonymous • No account needed</div>
-</div>
-
-<div class="rounded-xl border-2 border-solid p-4 border-blue-400 bg-blue-50">
-  <div class="flex items-center gap-2 mb-3">
-    <div i-carbon:data-base class="text-2xl text-blue-500"/>
-    <div class="font-bold text-blue-700">Open Data</div>
-  </div>
-  <div class="text-xs text-gray-600 space-y-1">
-    <div class="flex items-center gap-1">
-      <div i-carbon:checkmark class="text-blue-500 text-sm"/>
-      <span>LandScan population (90m)</span>
-    </div>
-    <div class="flex items-center gap-1">
-      <div i-carbon:checkmark class="text-blue-500 text-sm"/>
-      <span>Overture Maps (64M+ POIs)</span>
-    </div>
-    <div class="flex items-center gap-1">
-      <div i-carbon:checkmark class="text-blue-500 text-sm"/>
-      <span>OpenStreetMap infrastructure</span>
-    </div>
-    <div class="flex items-center gap-1">
-      <div i-carbon:checkmark class="text-blue-500 text-sm"/>
-      <span>Foursquare Places</span>
-    </div>
-  </div>
-  <div class="mt-2 text-xs text-blue-600 font-medium">Schools, hospitals, transit, green spaces</div>
 </div>
 
 </div>
 
-<div class="mt-4 text-center">
+<div class="mt-5 flex justify-center">
 
-```mermaid {scale: 0.5}
+```mermaid {scale: 0.575}
 flowchart LR
-    subgraph Collect["Data Collection"]
-        A[fa:fa-microchip Sensors]
-        B[fa:fa-mobile Mobile]
-        C[fa:fa-database Open Data]
-    end
-    subgraph Process["Edge Processing"]
-        D[fa:fa-lock Anonymize]
-        E[fa:fa-hexagon H3 Aggregate]
-    end
-    subgraph Store["Open Platform"]
-        F[fa:fa-cloud Source Coop]
-    end
-    A --> D
-    B --> D
-    C --> E
-    D --> E
-    E --> F
-    style A fill:#d1fae5,stroke:#059669
-    style B fill:#ffe4e6,stroke:#f43f5e
-    style C fill:#dbeafe,stroke:#3b82f6
-    style F fill:#e0e7ff,stroke:#6366f1
+    A[fa:fa-globe Globe Explorer<br/>23 indices] --> P[fa:fa-cube Walkthru.earth<br/>Urban Health Layer]
+    B[fa:fa-microchip OpenSensor.space<br/>Real-time air] --> P
+    C[fa:fa-mobile Hormones and Cities<br/>Wellbeing] --> P
+    P --> D[fa:fa-cloud Source Cooperative<br/>Public infrastructure]
+    style A fill:#dbeafe,stroke:#3b82f6
+    style B fill:#d1fae5,stroke:#059669
+    style C fill:#ffe4e6,stroke:#f43f5e
+    style P fill:#fef3c7,stroke:#d97706
+    style D fill:#e0e7ff,stroke:#6366f1
 ```
 
 </div>
 
----
-
-# OpenSensor.Space — Live Now
-
-<div class="mt-2 px-8">
-
-<div class="text-lg text-gray-600 mb-4">
-Our first tool is <strong>already deployed</strong> — real-time environmental sensing running for over a year
 </div>
 
-<div class="rounded-xl overflow-hidden border-2 border-green-400" style="height: 380px;">
+---
+
+# Globe Explorer
+
+<div class="mt-2 px-6">
+
+<div class="text-base text-gray-600 mb-4">
+A browser based spatial intelligence engine. Everything runs client side. No servers, no login, no cost to access.
+</div>
+
+<div class="grid grid-cols-2 gap-6">
+
+<div class="space-y-3">
+
+<div class="rounded-xl border-2 p-4 border-blue-400 bg-blue-50">
+  <div class="flex items-center gap-3 mb-1">
+    <div i-carbon:chart-radial class="text-2xl text-blue-500"/>
+    <div class="font-bold text-blue-700">23 Planetary Indices</div>
+  </div>
+  <div class="text-sm text-gray-700">Climate, hazard, vulnerability, accessibility, joined on a unified spatial grid.</div>
+</div>
+
+<div class="rounded-xl border-2 p-4 border-purple-400 bg-purple-50">
+  <div class="flex items-center gap-3 mb-1">
+    <div i-carbon:data-base class="text-2xl text-purple-500"/>
+    <div class="font-bold text-purple-700">300GB of Open Data</div>
+  </div>
+  <div class="text-sm text-gray-700">Terrain, population projections through 2100, building density, weather.</div>
+</div>
+
+<div class="rounded-xl border-2 p-4 border-amber-400 bg-amber-50">
+  <div class="flex items-center gap-3 mb-1">
+    <div i-carbon:terminal class="text-2xl text-amber-500"/>
+    <div class="font-bold text-amber-700">One SQL Query</div>
+  </div>
+  <div class="text-sm text-gray-700">DuckDB, GeoParquet, Iceberg, anything joinable in the browser.</div>
+</div>
+
+<div class="rounded-xl border-2 p-4 border-green-400 bg-green-50">
+  <div class="flex items-center gap-3 mb-1">
+    <div i-carbon:globe class="text-2xl text-green-500"/>
+    <div class="font-bold text-green-700">Global Equity</div>
+  </div>
+  <div class="text-sm text-gray-700">A researcher in Nairobi and a planner in Amsterdam have exactly the same tools.</div>
+</div>
+
+</div>
+
+<div class="flex flex-col items-center justify-center">
+  <div class="rounded-2xl border-2 border-blue-400 bg-white p-8 shadow-lg w-full">
+    <div class="flex items-center justify-center mb-4">
+      <div i-carbon:earth-filled class="text-8xl text-blue-500"/>
+    </div>
+    <div class="text-center text-sm text-gray-600 leading-relaxed">
+      <div class="font-semibold text-gray-800 mb-2">Why this matters</div>
+      Existing GIS stacks lock data in proprietary formats and behind paid licences. Globe Explorer treats public datasets as public infrastructure.
+    </div>
+  </div>
+  <div class="mt-3 text-xs text-gray-500 text-center">
+    Open formats, Parquet, GeoParquet, Iceberg. Analysis ready out of the box.
+  </div>
+</div>
+
+</div>
+
+</div>
+
+---
+zoom: 1.2
+---
+
+# OpenSensor.space, Live in Cairo
+
+<div class="mt-2 px-6">
+
+<div class="text-base text-gray-600 mb-3">
+Our environmental sensing layer is <strong>already deployed</strong>. Real time air quality, streaming continuously for over a year.
+</div>
+
+<div class="grid grid-cols-3 gap-4">
+
+<div class="col-span-2 rounded-xl overflow-hidden border-2 border-green-400" style="height: 340px;">
   <iframe
     src="https://opensensor.space/"
     class="w-full h-full"
@@ -400,15 +339,41 @@ Our first tool is <strong>already deployed</strong> — real-time environmental 
   ></iframe>
 </div>
 
+<div class="space-y-2">
+
+<div class="rounded-lg border-2 p-3 border-green-400 bg-green-50">
+  <div class="text-xs uppercase tracking-wide text-green-600 font-semibold mb-1">Real time signals</div>
+  <div class="text-sm text-gray-700">PM2.5, PM10, temperature, humidity, noise, light.</div>
+</div>
+
+<div class="rounded-lg border-2 p-3 border-blue-400 bg-blue-50">
+  <div class="text-xs uppercase tracking-wide text-blue-600 font-semibold mb-1">Hardware agnostic</div>
+  <div class="text-sm text-gray-700">Raspberry Pi, Jetson, anything Python capable.</div>
+</div>
+
+<div class="rounded-lg border-2 p-3 border-amber-400 bg-amber-50">
+  <div class="text-xs uppercase tracking-wide text-amber-600 font-semibold mb-1">Serverless architecture</div>
+  <div class="text-sm text-gray-700">Edge to Parquet to S3. No MQTT, no broker, no vendor lock in.</div>
+</div>
+
+<div class="rounded-lg border-2 p-3 border-purple-400 bg-purple-50">
+  <div class="text-xs uppercase tracking-wide text-purple-600 font-semibold mb-1">60 to 90 percent less energy</div>
+  <div class="text-sm text-gray-700">Than traditional always on IoT stacks.</div>
+</div>
+
+</div>
+
+</div>
+
 <div class="mt-3 flex justify-between items-center">
   <div class="flex gap-4 text-sm">
     <div class="flex items-center gap-1.5 text-green-600">
       <div i-carbon:checkmark-filled />
-      <span>2 stations live</span>
+      <span>2 stations live in Cairo</span>
     </div>
     <div class="flex items-center gap-1.5 text-green-600">
       <div i-carbon:checkmark-filled />
-      <span>1+ year of data</span>
+      <span>Same code deploys anywhere</span>
     </div>
   </div>
   <a href="https://opensensor.space" target="_blank" class="btn btn-link text-sm">
@@ -419,210 +384,13 @@ Our first tool is <strong>already deployed</strong> — real-time environmental 
 </div>
 
 ---
-
-# Why Rebuild the Stack?
-
-<div class="mt-2 px-4">
-
-<div class="text-lg text-gray-600 mb-4">
-Existing tools weren't designed for <strong>open, collaborative urban data</strong>
-</div>
-
-<div class="grid grid-cols-4 gap-3">
-
-<div class="rounded-xl border-2 border-solid p-3 border-red-300 bg-red-50 text-center">
-  <div i-carbon:copy class="text-3xl text-red-400 mx-auto mb-2" />
-  <div class="font-bold text-sm text-red-600">Data Duplication</div>
-  <div class="text-xs text-gray-600 mt-1">
-    Every org rebuilds the same pipelines for public data
-  </div>
-</div>
-
-<div class="rounded-xl border-2 border-solid p-3 border-amber-300 bg-amber-50 text-center">
-  <div i-carbon:locked class="text-3xl text-amber-500 mx-auto mb-2" />
-  <div class="font-bold text-sm text-amber-600">Vendor Lock-in</div>
-  <div class="text-xs text-gray-600 mt-1">
-    Proprietary formats trap data in silos
-  </div>
-</div>
-
-<div class="rounded-xl border-2 border-solid p-3 border-purple-300 bg-purple-50 text-center">
-  <div i-carbon:query-queue class="text-3xl text-purple-500 mx-auto mb-2" />
-  <div class="font-bold text-sm text-purple-600">Not Analysis-Ready</div>
-  <div class="text-xs text-gray-600 mt-1">
-    Raw data needs ETL before any insights
-  </div>
-</div>
-
-<div class="rounded-xl border-2 border-solid p-3 border-blue-300 bg-blue-50 text-center">
-  <div i-carbon:battery-low class="text-3xl text-blue-500 mx-auto mb-2" />
-  <div class="font-bold text-sm text-blue-600">Energy Waste</div>
-  <div class="text-xs text-gray-600 mt-1">
-    Always-on servers for intermittent data
-  </div>
-</div>
-
-</div>
-
-<div class="mt-4 rounded-xl border-2 border-solid p-4 border-green-400 bg-green-50">
-  <div class="font-bold text-green-700 mb-3 flex items-center gap-2 text-lg">
-    <div i-carbon:lightbulb class="text-2xl" />
-    Our Approach
-  </div>
-  <div class="grid grid-cols-2 gap-3 text-sm text-gray-700">
-    <div class="flex items-center gap-2">
-      <div i-carbon:checkmark class="text-green-500 text-lg flex-shrink-0" />
-      <span><strong>Open formats</strong> — Parquet, GeoParquet, Iceberg</span>
-    </div>
-    <div class="flex items-center gap-2">
-      <div i-carbon:checkmark class="text-green-500 text-lg flex-shrink-0" />
-      <span><strong>Analysis-ready</strong> — DuckDB, Spark, Python</span>
-    </div>
-    <div class="flex items-center gap-2">
-      <div i-carbon:checkmark class="text-green-500 text-lg flex-shrink-0" />
-      <span><strong>AI-ready</strong> — ML pipelines & embeddings</span>
-    </div>
-    <div class="flex items-center gap-2">
-      <div i-carbon:checkmark class="text-green-500 text-lg flex-shrink-0" />
-      <span><strong>Serverless</strong> — No idle costs, pay for compute</span>
-    </div>
-  </div>
-</div>
-
-<div class="mt-2 text-center text-sm" style="color: hsl(158 64% 42%)">
-  <strong>Result:</strong> 60-90% less energy • Zero data loss • No vendor lock-in • Ready for AI
-</div>
-
-</div>
-
+zoom: 1.2
 ---
 
-# Cloud-Native Everywhere
-
-<div class="mt-2 px-4">
-
-<div class="text-lg text-gray-600 mb-3">
-The same architecture powers <strong>all our tools</strong> — from edge sensors to mobile apps
-</div>
-
-<div class="grid grid-cols-3 gap-4">
-
-<div class="rounded-xl border-2 border-solid p-3 border-green-400 bg-green-50">
-  <div class="flex items-center gap-2 mb-2">
-    <div i-carbon:iot-platform class="text-2xl text-green-500" />
-    <div class="font-bold text-green-700">IoT Sensors</div>
-  </div>
-  <div class="space-y-1 text-xs text-gray-600">
-    <div class="flex items-center gap-1">
-      <div i-carbon:checkmark class="text-green-500" />
-      <span>Raspberry Pi → Parquet → S3</span>
-    </div>
-    <div class="flex items-center gap-1">
-      <div i-carbon:checkmark class="text-green-500" />
-      <span>No MQTT, no database servers</span>
-    </div>
-    <div class="flex items-center gap-1">
-      <div i-carbon:checkmark class="text-green-500" />
-      <span>Offline-first, zero data loss</span>
-    </div>
-  </div>
-</div>
-
-<div class="rounded-xl border-2 border-solid p-3 border-rose-400 bg-rose-50">
-  <div class="flex items-center gap-2 mb-2">
-    <div i-carbon:mobile class="text-2xl text-rose-500" />
-    <div class="font-bold text-rose-700">Mobile App</div>
-  </div>
-  <div class="space-y-1 text-xs text-gray-600">
-    <div class="flex items-center gap-1">
-      <div i-carbon:checkmark class="text-rose-500" />
-      <span>DuckDB runs on your phone</span>
-    </div>
-    <div class="flex items-center gap-1">
-      <div i-carbon:checkmark class="text-rose-500" />
-      <span>Query Iceberg/DuckLake directly</span>
-    </div>
-    <div class="flex items-center gap-1">
-      <div i-carbon:checkmark class="text-rose-500" />
-      <span>No backend API needed</span>
-    </div>
-  </div>
-</div>
-
-<div class="rounded-xl border-2 border-solid p-3 border-amber-400 bg-amber-50">
-  <div class="flex items-center gap-2 mb-2">
-    <div i-carbon:data-refinery class="text-2xl text-amber-500" />
-    <div class="font-bold text-amber-700">Data Pipelines</div>
-  </div>
-  <div class="space-y-1 text-xs text-gray-600">
-    <div class="flex items-center gap-1">
-      <div i-carbon:checkmark class="text-amber-500" />
-      <span>Ephemeral runners (no servers)</span>
-    </div>
-    <div class="flex items-center gap-1">
-      <div i-carbon:checkmark class="text-amber-500" />
-      <span>DuckDB SQL transformations</span>
-    </div>
-    <div class="flex items-center gap-1">
-      <div i-carbon:checkmark class="text-amber-500" />
-      <span>Output to open formats</span>
-    </div>
-  </div>
-</div>
-
-</div>
-
-<div class="mt-3 flex justify-center">
-
-```mermaid {scale: 0.45}
-flowchart LR
-    subgraph Sources["Data Sources"]
-        A[fa:fa-microchip IoT Sensor]
-        B[fa:fa-mobile Mobile App]
-        C[fa:fa-code Pipeline]
-    end
-    subgraph Format["Open Format"]
-        D[fa:fa-file Parquet/Iceberg]
-    end
-    subgraph Storage["Object Storage"]
-        E[fa:fa-cloud S3 / source.coop]
-    end
-    subgraph Query["Query Anywhere"]
-        F[fa:fa-database DuckDB]
-        G[fa:fa-mobile Phone]
-        H[fa:fa-globe Browser]
-    end
-    A --> D
-    B --> D
-    C --> D
-    D --> E
-    E --> F
-    E --> G
-    E --> H
-    style A fill:#d1fae5,stroke:#059669
-    style B fill:#ffe4e6,stroke:#f43f5e
-    style C fill:#fef3c7,stroke:#d97706
-    style D fill:#e0e7ff,stroke:#6366f1
-    style E fill:#e0e7ff,stroke:#6366f1
-    style F fill:#d1fae5,stroke:#059669
-    style G fill:#ffe4e6,stroke:#f43f5e
-    style H fill:#dbeafe,stroke:#3b82f6
-```
-
-</div>
-
-<div class="mt-2 text-center text-sm text-gray-500">
-  <strong>The insight:</strong> One architecture, many devices — no servers in between
-</div>
-
-</div>
-
----
-
-# Hormones & Cities App
+# Hormones & Cities
 
 <div class="text-base text-gray-600 mb-2 text-center">
-Capturing the <strong>human experience</strong> of your city — completely anonymously
+Capturing what sensors cannot, the lived experience of a city, completely anonymously.
 </div>
 
 <div class="grid grid-cols-3 gap-6 px-16">
@@ -644,8 +412,8 @@ Capturing the <strong>human experience</strong> of your city — completely anon
       <div class="w-14 h-1 bg-white rounded-full opacity-60"></div>
     </div>
   </div>
-  <div class="mt-2 font-semibold text-sm">Survey Categories</div>
-  <div class="text-xs text-gray-500">Housing, wellbeing, community</div>
+  <div class="mt-2 font-semibold text-sm">Wellbeing Survey</div>
+  <div class="text-xs text-gray-500">Mood, stress, housing, community</div>
 </div>
 
 <div class="text-center">
@@ -687,420 +455,305 @@ Capturing the <strong>human experience</strong> of your city — completely anon
     </div>
   </div>
   <div class="mt-2 font-semibold text-sm">City Pulse Dashboard</div>
-  <div class="text-xs text-gray-500">Community trends</div>
+  <div class="text-xs text-gray-500">Neighbourhood trends</div>
 </div>
 
 </div>
 
-<div class="mt-2 flex justify-center gap-6 text-sm">
-  <div class="flex items-center gap-1.5 text-green-600">
-    <div i-carbon:checkmark-filled />
-    <span>No account required</span>
+<div class="mt-3 grid grid-cols-4 gap-2 px-12">
+  <div class="rounded-lg border border-amber-400 bg-amber-50 p-2 text-center">
+    <div i-carbon:edge-node class="text-xl text-amber-500 mx-auto"/>
+    <div class="text-xs font-semibold mt-1">On device</div>
+    <div class="text-xs text-gray-500">Raw data never uploaded</div>
   </div>
-  <div class="flex items-center gap-1.5 text-green-600">
-    <div i-carbon:checkmark-filled />
-    <span>No personal data stored</span>
+  <div class="rounded-lg border border-blue-400 bg-blue-50 p-2 text-center">
+    <div i-carbon:user-avatar class="text-xl text-blue-500 mx-auto"/>
+    <div class="text-xs font-semibold mt-1">Anonymous</div>
+    <div class="text-xs text-gray-500">No account, no email</div>
   </div>
-  <div class="flex items-center gap-1.5 text-green-600">
-    <div i-carbon:checkmark-filled />
-    <span>Location aggregated</span>
+  <div class="rounded-lg border border-purple-400 bg-purple-50 p-2 text-center">
+    <div i-carbon:location class="text-xl text-purple-500 mx-auto"/>
+    <div class="text-xs font-semibold mt-1">H3 aggregated</div>
+    <div class="text-xs text-gray-500">~500m hex cells</div>
   </div>
-</div>
-
----
-
-# Privacy by Design
-
-<div class="mt-2 px-6">
-
-<div class="text-lg text-gray-700 leading-relaxed mb-4">
-Your data helps cities improve. Your <strong>identity</strong> stays yours.
-</div>
-
-<div class="grid grid-cols-2 gap-6">
-
-<div class="space-y-3">
-
-<div class="rounded-xl border-2 border-solid p-3 backdrop-blur bg-opacity-10 border-amber-500 bg-amber-50">
-  <div class="flex items-center gap-3 mb-1">
-    <div i-carbon:edge-node class="text-xl text-amber-500"/>
-    <div class="font-bold">Edge Computation</div>
+  <div class="rounded-lg border border-green-400 bg-green-50 p-2 text-center">
+    <div i-carbon:group class="text-xl text-green-500 mx-auto"/>
+    <div class="text-xs font-semibold mt-1">Sharper with scale</div>
+    <div class="text-xs text-gray-500">Community signal</div>
   </div>
-  <div class="text-xs text-gray-600">
-    Data is <strong>processed on-device</strong> before upload. Your raw data never leaves your phone or sensor.
-  </div>
-</div>
-
-<div class="rounded-xl border-2 border-solid p-3 backdrop-blur bg-opacity-10 border-blue-500 bg-blue-50">
-  <div class="flex items-center gap-3 mb-1">
-    <div i-carbon:user-avatar class="text-xl text-blue-500"/>
-    <div class="font-bold">Anonymous Upload</div>
-  </div>
-  <div class="text-xs text-gray-600">
-    <strong>No account required</strong>. No email, no personal data stored. Responses are untraceable.
-  </div>
-</div>
-
-<div class="rounded-xl border-2 border-solid p-3 backdrop-blur bg-opacity-10 border-purple-500 bg-purple-50">
-  <div class="flex items-center gap-3 mb-1">
-    <div i-carbon:location class="text-xl text-purple-500"/>
-    <div class="font-bold">H3 Spatial Aggregation</div>
-  </div>
-  <div class="text-xs text-gray-600">
-    Location aggregated to <strong>~500m hexagonal cells</strong>. We measure neighborhoods, not individuals.
-  </div>
-</div>
-
-<div class="rounded-xl border-2 border-solid p-3 backdrop-blur bg-opacity-10 border-green-500 bg-green-50">
-  <div class="flex items-center gap-3 mb-1">
-    <div i-carbon:locked class="text-xl text-green-500"/>
-    <div class="font-bold">No Tracking</div>
-  </div>
-  <div class="text-xs text-gray-600">
-    No cookies, no fingerprinting, no behavioral tracking. Just <strong>honest urban data</strong>.
-  </div>
-</div>
-
-</div>
-
-<div class="flex items-center justify-center">
-
-```mermaid {scale: 0.55}
-flowchart TB
-    subgraph Device["Your Device"]
-        A[Raw Data] --> B[Edge Processing]
-    end
-    B --> C[Anonymize & Aggregate]
-    C --> D[H3 Hexagon Cell]
-    D --> E[Community Insights]
-    style A fill:#fef3c7,stroke:#d97706
-    style B fill:#fef3c7,stroke:#d97706
-    style C fill:#e0e7ff,stroke:#6366f1
-    style D fill:#f3e8ff,stroke:#9333ea
-    style E fill:#d1fae5,stroke:#059669
-```
-
-</div>
-
-</div>
-
 </div>
 
 ---
+layout: full
+---
 
-# Why We Are "Open"
+<script setup>
+import HNCExplorer from './components/hnc/HNCExplorer.vue'
+</script>
 
-<div class="mt-2 px-4">
-
-<div class="text-lg text-gray-700 leading-relaxed mb-4">
-We believe urban data should be <strong>public infrastructure</strong>, just like roads and bridges.
+<div class="slide-fit">
+  <HNCExplorer />
 </div>
 
-<div class="grid grid-cols-2 gap-4">
+<!--
+The HNC Explorer is rendered natively in this slide as a Vue component. Parquet, GLB hemispheres, parcel atlas, and AOI baselines are fetched from walkthru.earth at runtime. Fully interactive. Use the play/pause and 0.5x to 30x speed controls to walk frames. Click a marker on the map or a region in the radar to spotlight it. Caveat, static-clip means motion areas like MT/V5 under-fire, ventral-stream regions are honest. Code at github.com/walkthru-earth/hnc.
+-->
 
-<div class="space-y-3">
+---
+zoom: 1.2
+---
 
-<div class="rounded-xl border-2 border-solid p-3 border-green-500 bg-green-50">
-  <div class="flex items-center gap-3 mb-1">
-    <div i-carbon:checkmark-filled class="text-xl text-green-500"/>
-    <div class="font-bold">Trust & Transparency</div>
-  </div>
-  <div class="text-xs text-gray-600">
-    All code on <a href="https://github.com/walkthru-earth" target="_blank" class="text-green-600 underline">GitHub</a>. Every pipeline, model, and methodology can be <strong>verified and audited</strong> by anyone.
-  </div>
-</div>
+# Open by Design
 
-<div class="rounded-xl border-2 border-solid p-3 border-blue-500 bg-blue-50">
-  <div class="flex items-center gap-3 mb-1">
-    <div i-carbon:repeat class="text-xl text-blue-500"/>
-    <div class="font-bold">Reproducibility</div>
-  </div>
-  <div class="text-xs text-gray-600">
-    Any researcher can <strong>reproduce our findings</strong> using the same data and code. Science that can't be replicated isn't science.
-  </div>
-</div>
+<div class="mt-3 px-6">
 
-<div class="rounded-xl border-2 border-solid p-3 border-amber-500 bg-amber-50">
-  <div class="flex items-center gap-3 mb-1">
-    <div i-carbon:globe class="text-xl text-amber-500"/>
-    <div class="font-bold">Global Equity</div>
+<div class="rounded-2xl p-6 text-center border-2 border-green-500 bg-gradient-to-br from-green-50 via-white to-amber-50 shadow-sm">
+  <div class="flex items-center justify-center gap-3 mb-2">
+    <div i-carbon:unlocked class="text-4xl text-green-600"/>
+    <div class="text-2xl font-bold tracking-tight" style="color: hsl(158 64% 30%)">Public Infrastructure</div>
   </div>
-  <div class="text-xs text-gray-600">
-    A community in <strong>Dhaka</strong> has the same tools as <strong>Dubai</strong>. No paywalls, no gatekeepers, no privileged access.
+  <div class="text-sm text-gray-600 max-w-2xl mx-auto leading-relaxed">
+    We treat urban health data the same way we treat roads. <strong class="text-gray-800">Built once, used by everyone.</strong>
   </div>
 </div>
 
-</div>
+<div class="mt-5 grid grid-cols-3 gap-3">
 
-<div class="space-y-3">
-
-<div class="rounded-xl border-2 border-solid p-3 border-purple-500 bg-purple-50">
-  <div class="flex items-center gap-3 mb-1">
-    <img src="https://walkthru.earth/source-coop-logo.png" class="h-5 w-5" alt="Source Cooperative" />
-    <div class="font-bold text-purple-700">Open Data Platform</div>
-  </div>
-  <div class="text-xs text-gray-600">
-    All datasets on <strong>Source Cooperative</strong> — a non-profit platform where data is a public good, not a product.
+<div class="flex items-center gap-3 rounded-full border border-green-300 bg-green-50 px-4 py-2">
+  <div i-carbon:logo-github class="text-xl text-green-600 flex-shrink-0"/>
+  <div>
+    <div class="text-sm font-semibold text-green-700 leading-tight">All Code on GitHub</div>
+    <div class="text-xs text-gray-500 leading-tight">Pipelines, models, methods.</div>
   </div>
 </div>
 
-<div class="rounded-xl border-2 border-solid p-3 border-rose-500 bg-rose-50">
-  <div class="flex items-center gap-3 mb-1">
-    <div i-carbon:group class="text-xl text-rose-500"/>
-    <div class="font-bold">Community-Driven</div>
-  </div>
-  <div class="text-xs text-gray-600">
-    Anyone can <strong>contribute new data sources</strong>, improve pipelines, or extend the platform. This is collective infrastructure.
+<div class="flex items-center gap-3 rounded-full border border-purple-300 bg-purple-50 px-4 py-2">
+  <img src="https://walkthru.earth/source-coop-logo.png" class="h-5 w-5 flex-shrink-0" alt="Source Cooperative" />
+  <div>
+    <div class="text-sm font-semibold text-purple-700 leading-tight">Source Coop</div>
+    <div class="text-xs text-gray-500 leading-tight">Open formats, non-profit.</div>
   </div>
 </div>
 
-<div class="rounded-xl border-2 border-solid p-3 border-teal-500 bg-teal-50">
-  <div class="flex items-center gap-3 mb-1">
-    <div i-carbon:security class="text-xl text-teal-500"/>
-    <div class="font-bold">Accountability</div>
+<div class="flex items-center gap-3 rounded-full border border-amber-300 bg-amber-50 px-4 py-2">
+  <div i-carbon:globe class="text-xl text-amber-600 flex-shrink-0"/>
+  <div>
+    <div class="text-sm font-semibold text-amber-700 leading-tight">Same Tools, Anywhere</div>
+    <div class="text-xs text-gray-500 leading-tight">Dhaka, Amsterdam, the same.</div>
   </div>
-  <div class="text-xs text-gray-600">
-    Open data means <strong>no hidden agendas</strong>. If our methods are flawed, the community will find and fix them.
+</div>
+
+<div class="flex items-center gap-3 rounded-full border border-blue-300 bg-blue-50 px-4 py-2">
+  <div i-carbon:repeat class="text-xl text-blue-600 flex-shrink-0"/>
+  <div>
+    <div class="text-sm font-semibold text-blue-700 leading-tight">Reproducible</div>
+    <div class="text-xs text-gray-500 leading-tight">Same data, same result.</div>
+  </div>
+</div>
+
+<div class="flex items-center gap-3 rounded-full border border-rose-300 bg-rose-50 px-4 py-2">
+  <div i-carbon:group class="text-xl text-rose-600 flex-shrink-0"/>
+  <div>
+    <div class="text-sm font-semibold text-rose-700 leading-tight">Community-driven</div>
+    <div class="text-xs text-gray-500 leading-tight">Anyone can contribute.</div>
+  </div>
+</div>
+
+<div class="flex items-center gap-3 rounded-full border border-teal-300 bg-teal-50 px-4 py-2">
+  <div i-carbon:security class="text-xl text-teal-600 flex-shrink-0"/>
+  <div>
+    <div class="text-sm font-semibold text-teal-700 leading-tight">Accountable</div>
+    <div class="text-xs text-gray-500 leading-tight">Open methods, open critique.</div>
   </div>
 </div>
 
 </div>
 
-</div>
-
-<div class="mt-3 p-3 rounded-lg bg-gray-100 text-center">
-  <div class="text-sm text-gray-600">
-    <strong>"Closed data creates closed cities."</strong> We're building the opposite — infrastructure that belongs to everyone.
-  </div>
+<div class="mt-5 text-center text-sm italic" style="color: hsl(158 64% 35%)">
+  Closed data creates closed cities. We are building the opposite.
 </div>
 
 </div>
 
 ---
-
-# Who Benefits?
-
-<div class="text-base text-gray-600 mb-3 text-center">
-We turn data into <strong>actionable insights</strong> for everyone
-</div>
-
-<div class="flex justify-center items-center gap-8">
-
-<!-- Left column -->
-<div class="space-y-3">
-
-<div class="text-center">
-  <div class="rounded-full w-14 h-14 mx-auto flex items-center justify-center bg-green-100 border-2 border-green-400">
-    <div i-carbon:home class="text-2xl text-green-600"/>
-  </div>
-  <div class="mt-1 font-bold text-xs">Families</div>
-  <div class="text-xs text-gray-500 max-w-24">Healthy neighborhoods</div>
-</div>
-
-<div class="text-center">
-  <div class="rounded-full w-14 h-14 mx-auto flex items-center justify-center bg-blue-100 border-2 border-blue-400">
-    <div i-carbon:map class="text-2xl text-blue-600"/>
-  </div>
-  <div class="mt-1 font-bold text-xs">Planners</div>
-  <div class="text-xs text-gray-500 max-w-24">Evidence for parks</div>
-</div>
-
-<div class="text-center">
-  <div class="rounded-full w-14 h-14 mx-auto flex items-center justify-center bg-amber-100 border-2 border-amber-400">
-    <div i-carbon:growth class="text-2xl text-amber-600"/>
-  </div>
-  <div class="mt-1 font-bold text-xs">Investors</div>
-  <div class="text-xs text-gray-500 max-w-24">ESG reporting</div>
-</div>
-
-</div>
-
-<!-- Center - The Individual (largest) -->
-<div class="text-center">
-  <div class="rounded-full w-32 h-32 mx-auto flex items-center justify-center bg-gradient-to-br from-green-100 to-amber-100 border-4 border-green-500 shadow-lg">
-    <div i-carbon:user class="text-7xl text-green-600"/>
-  </div>
-  <div class="mt-3 font-bold text-lg" style="color: hsl(158 64% 42%)">You</div>
-  <div class="text-sm text-gray-600 max-w-40 mx-auto">
-    Know what your city is doing to <strong>your health</strong>
-  </div>
-</div>
-
-<!-- Right column -->
-<div class="space-y-3">
-
-<div class="text-center">
-  <div class="rounded-full w-14 h-14 mx-auto flex items-center justify-center bg-purple-100 border-2 border-purple-400">
-    <div i-carbon:education class="text-2xl text-purple-600"/>
-  </div>
-  <div class="mt-1 font-bold text-xs">Researchers</div>
-  <div class="text-xs text-gray-500 max-w-24">Open datasets</div>
-</div>
-
-<div class="text-center">
-  <div class="rounded-full w-14 h-14 mx-auto flex items-center justify-center bg-rose-100 border-2 border-rose-400">
-    <div i-carbon:building-insights-1 class="text-2xl text-rose-600"/>
-  </div>
-  <div class="mt-1 font-bold text-xs">Policymakers</div>
-  <div class="text-xs text-gray-500 max-w-24">Health regulations</div>
-</div>
-
-<div class="text-center">
-  <div class="rounded-full w-14 h-14 mx-auto flex items-center justify-center bg-teal-100 border-2 border-teal-400">
-    <div i-carbon:events class="text-2xl text-teal-600"/>
-  </div>
-  <div class="mt-1 font-bold text-xs">Communities</div>
-  <div class="text-xs text-gray-500 max-w-24">Advocate for change</div>
-</div>
-
-</div>
-
-</div>
-
-<div class="mt-3 text-center text-sm text-gray-500">
-  <strong>Everyone</strong> deserves to know what their environment is doing to them
-</div>
-
----
-layout: center
+zoom: 1.2
 ---
 
-<div class="max-w-4xl mx-auto">
+# Who This Serves
 
-<div class="text-center mb-6">
-  <div i-carbon:data-share class="text-5xl text-amber-500" />
+<div class="px-4">
+
+<!-- Audience labels row, aligned to the building silhouettes below -->
+<div class="grid grid-cols-6 gap-1">
+
+<div class="text-center">
+  <div i-carbon:location-filled class="text-base text-teal-600 mx-auto"/>
+  <div class="text-sm font-bold text-teal-700 leading-tight mt-0.5">NGOs &amp; Funders</div>
+  <div class="text-xs text-gray-500 leading-snug mt-1">Programme targeting and impact measurement grounded in observable urban conditions, so funding decisions reflect what is actually happening on the ground rather than what reports claim.</div>
 </div>
 
-# The Data Sharing Challenge
-
-<div class="grid grid-cols-2 gap-6 mt-6">
-
-<div class="rounded-xl border-2 p-5 border-blue-300 bg-blue-50">
-  <div class="font-bold text-lg mb-3 text-blue-600 flex items-center gap-2">
-    <div i-carbon:cloud-services class="text-2xl" />
-    What Big Tech Solved
-  </div>
-  <div class="space-y-2 text-sm text-gray-600">
-    <div class="flex items-center gap-2">
-      <div i-carbon:checkmark class="text-blue-500" />
-      <span>Scalable object storage (S3, GCS, Azure)</span>
-    </div>
-    <div class="flex items-center gap-2">
-      <div i-carbon:checkmark class="text-blue-500" />
-      <span>Open table formats (Apache Iceberg, DuckLake)</span>
-    </div>
-    <div class="flex items-center gap-2">
-      <div i-carbon:checkmark class="text-blue-500" />
-      <span>Serverless query engines (DuckDB, Athena)</span>
-    </div>
-  </div>
+<div class="text-center">
+  <div i-carbon:location-filled class="text-base text-rose-600 mx-auto"/>
+  <div class="text-sm font-bold text-rose-700 leading-tight mt-0.5">Communities</div>
+  <div class="text-xs text-gray-500 leading-snug mt-1">Visibility into what their environment is doing to their air, sleep, and stress, plus a structured voice in the data so the people most affected help shape it.</div>
 </div>
 
-<div class="rounded-xl border-2 p-5 border-red-300 bg-red-50">
-  <div class="font-bold text-lg mb-3 text-red-600 flex items-center gap-2">
-    <div i-carbon:help class="text-2xl" />
-    What's Still Missing
-  </div>
-  <div class="space-y-2 text-sm text-gray-600">
-    <div class="flex items-center gap-2">
-      <div i-carbon:close class="text-red-400" />
-      <span>Open, collaborative pipeline design</span>
-    </div>
-    <div class="flex items-center gap-2">
-      <div i-carbon:close class="text-red-400" />
-      <span>Simple way to contribute & maintain</span>
-    </div>
-    <div class="flex items-center gap-2">
-      <div i-carbon:close class="text-red-400" />
-      <span>No duplication across organizations</span>
-    </div>
-  </div>
+<div class="text-center">
+  <div i-carbon:location-filled class="text-base text-blue-600 mx-auto"/>
+  <div class="text-sm font-bold text-blue-700 leading-tight mt-0.5">Cities &amp; Public Health</div>
+  <div class="text-xs text-gray-500 leading-snug mt-1">Continuous neighbourhood-scale signals for policy, infrastructure, and climate adaptation, replacing one-off surveys with a live picture of how the city performs for residents.</div>
+</div>
+
+<div class="text-center">
+  <div i-carbon:location-filled class="text-base text-green-600 mx-auto"/>
+  <div class="text-sm font-bold text-green-700 leading-tight mt-0.5">Planners &amp; Architects</div>
+  <div class="text-xs text-gray-500 leading-snug mt-1">Evidence for parks, walkability, density, and where intervention will move the needle, so design decisions are anchored in the lived conditions of each block, not citywide averages.</div>
+</div>
+
+<div class="text-center">
+  <div i-carbon:location-filled class="text-base text-purple-600 mx-auto"/>
+  <div class="text-sm font-bold text-purple-700 leading-tight mt-0.5">Researchers</div>
+  <div class="text-xs text-gray-500 leading-snug mt-1">Open datasets and reproducible pipelines, free to query in the browser, free to extend, engineered so independent groups can replicate or challenge any finding end to end.</div>
+</div>
+
+<div class="text-center">
+  <div i-carbon:location-filled class="text-base text-amber-600 mx-auto"/>
+  <div class="text-sm font-bold text-amber-700 leading-tight mt-0.5">Investors &amp; ESG</div>
+  <div class="text-xs text-gray-500 leading-snug mt-1">Independent, auditable signals on environmental and social outcomes at neighbourhood resolution, giving capital allocators real urban data instead of self-reported corporate disclosures.</div>
 </div>
 
 </div>
 
-<div class="mt-6 text-center p-4 rounded-lg bg-gray-100">
-  <div class="text-gray-600">
-    Every business builds their own infra to aggregate the <strong>same</strong> public datasets.
-  </div>
-  <div class="mt-2 text-lg font-semibold" style="color: hsl(37 91% 55%)">
-    What if there was a Homebrew for public data pipelines?
-  </div>
-</div>
+<!-- City silhouette: each building sits under its corresponding audience label.
+     Soft sky gradient backdrop, ground horizon line, brand-tinted building tops. -->
+<svg viewBox="0 0 1200 220" class="w-full mt-2" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYEnd meet">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fef3c7" stop-opacity="0.0"/>
+      <stop offset="100%" stop-color="#a7f3d0" stop-opacity="0.25"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#94a3b8" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#94a3b8" stop-opacity="0.0"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="220" fill="url(#sky)"/>
+
+  <!-- 1. NGO/community office (teal): low pitched-roof building with flag -->
+  <g>
+    <line x1="100" y1="20" x2="100" y2="115" stroke="#0d9488" stroke-width="1" stroke-dasharray="2 3" opacity="0.5"/>
+    <rect x="50" y="120" width="100" height="80" fill="#ccfbf1" stroke="#0d9488" stroke-width="2"/>
+    <polygon points="50,120 100,90 150,120" fill="#5eead4" stroke="#0d9488" stroke-width="2"/>
+    <line x1="100" y1="90" x2="100" y2="60" stroke="#0d9488" stroke-width="2"/>
+    <polygon points="100,60 130,68 100,76" fill="#0d9488"/>
+    <rect x="65" y="140" width="20" height="30" fill="#0d9488" opacity="0.2"/>
+    <rect x="115" y="140" width="20" height="30" fill="#0d9488" opacity="0.2"/>
+    <rect x="90" y="170" width="20" height="30" fill="#0d9488" opacity="0.5"/>
+  </g>
+
+  <!-- 2. Apartment block (rose): grid of windows, residential -->
+  <g>
+    <line x1="300" y1="20" x2="300" y2="75" stroke="#e11d48" stroke-width="1" stroke-dasharray="2 3" opacity="0.5"/>
+    <rect x="240" y="80" width="120" height="120" fill="#ffe4e6" stroke="#e11d48" stroke-width="2"/>
+    <g fill="#e11d48" opacity="0.35">
+      <rect x="252" y="92" width="14" height="18"/>
+      <rect x="276" y="92" width="14" height="18"/>
+      <rect x="300" y="92" width="14" height="18"/>
+      <rect x="324" y="92" width="14" height="18"/>
+      <rect x="252" y="120" width="14" height="18"/>
+      <rect x="276" y="120" width="14" height="18"/>
+      <rect x="300" y="120" width="14" height="18"/>
+      <rect x="324" y="120" width="14" height="18"/>
+      <rect x="252" y="148" width="14" height="18"/>
+      <rect x="276" y="148" width="14" height="18"/>
+      <rect x="300" y="148" width="14" height="18"/>
+      <rect x="324" y="148" width="14" height="18"/>
+    </g>
+    <rect x="290" y="176" width="20" height="24" fill="#e11d48" opacity="0.5"/>
+  </g>
+
+  <!-- 3. City Hall with dome (blue): government / civic building -->
+  <g>
+    <line x1="500" y1="20" x2="500" y2="55" stroke="#2563eb" stroke-width="1" stroke-dasharray="2 3" opacity="0.5"/>
+    <rect x="430" y="120" width="140" height="80" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <rect x="450" y="100" width="100" height="20" fill="#bfdbfe" stroke="#2563eb" stroke-width="2"/>
+    <path d="M450 100 Q500 50 550 100 Z" fill="#93c5fd" stroke="#2563eb" stroke-width="2"/>
+    <line x1="500" y1="50" x2="500" y2="35" stroke="#2563eb" stroke-width="2"/>
+    <circle cx="500" cy="32" r="3" fill="#2563eb"/>
+    <g fill="#2563eb" opacity="0.4">
+      <rect x="445" y="140" width="10" height="50"/>
+      <rect x="465" y="140" width="10" height="50"/>
+      <rect x="485" y="140" width="10" height="50"/>
+      <rect x="505" y="140" width="10" height="50"/>
+      <rect x="525" y="140" width="10" height="50"/>
+      <rect x="545" y="140" width="10" height="50"/>
+    </g>
+    <rect x="490" y="180" width="20" height="20" fill="#2563eb" opacity="0.6"/>
+  </g>
+
+  <!-- 4. Planners site: half-built tower with construction crane -->
+  <g>
+    <line x1="700" y1="20" x2="700" y2="65" stroke="#16a34a" stroke-width="1" stroke-dasharray="2 3" opacity="0.5"/>
+    <rect x="650" y="110" width="100" height="90" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+    <g stroke="#16a34a" stroke-width="1" opacity="0.4">
+      <line x1="660" y1="120" x2="740" y2="120"/>
+      <line x1="660" y1="140" x2="740" y2="140"/>
+      <line x1="660" y1="160" x2="740" y2="160"/>
+      <line x1="660" y1="180" x2="740" y2="180"/>
+    </g>
+    <line x1="710" y1="110" x2="710" y2="60" stroke="#16a34a" stroke-width="2"/>
+    <line x1="710" y1="60" x2="775" y2="60" stroke="#16a34a" stroke-width="2"/>
+    <line x1="710" y1="60" x2="685" y2="60" stroke="#16a34a" stroke-width="2"/>
+    <line x1="775" y1="60" x2="775" y2="80" stroke="#16a34a" stroke-width="1.5"/>
+    <rect x="770" y="80" width="10" height="8" fill="#16a34a" opacity="0.5"/>
+    <line x1="685" y1="60" x2="710" y2="50" stroke="#16a34a" stroke-width="1.5"/>
+    <line x1="685" y1="60" x2="710" y2="70" stroke="#16a34a" stroke-width="1.5"/>
+  </g>
+
+  <!-- 5. University / classical building (purple): pediment + columns -->
+  <g>
+    <line x1="900" y1="20" x2="900" y2="80" stroke="#9333ea" stroke-width="1" stroke-dasharray="2 3" opacity="0.5"/>
+    <polygon points="830,100 900,70 970,100" fill="#e9d5ff" stroke="#9333ea" stroke-width="2"/>
+    <rect x="830" y="100" width="140" height="100" fill="#f3e8ff" stroke="#9333ea" stroke-width="2"/>
+    <g fill="#9333ea" opacity="0.4">
+      <rect x="845" y="115" width="8" height="75"/>
+      <rect x="865" y="115" width="8" height="75"/>
+      <rect x="885" y="115" width="8" height="75"/>
+      <rect x="905" y="115" width="8" height="75"/>
+      <rect x="925" y="115" width="8" height="75"/>
+      <rect x="945" y="115" width="8" height="75"/>
+    </g>
+    <rect x="890" y="170" width="20" height="30" fill="#9333ea" opacity="0.6"/>
+  </g>
+
+  <!-- 6. Glass tower (amber): financial / investor district -->
+  <g>
+    <line x1="1100" y1="20" x2="1100" y2="50" stroke="#d97706" stroke-width="1" stroke-dasharray="2 3" opacity="0.5"/>
+    <rect x="1050" y="55" width="100" height="145" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+    <g stroke="#d97706" stroke-width="1" opacity="0.5">
+      <line x1="1075" y1="55" x2="1075" y2="200"/>
+      <line x1="1100" y1="55" x2="1100" y2="200"/>
+      <line x1="1125" y1="55" x2="1125" y2="200"/>
+      <line x1="1050" y1="80" x2="1150" y2="80"/>
+      <line x1="1050" y1="105" x2="1150" y2="105"/>
+      <line x1="1050" y1="130" x2="1150" y2="130"/>
+      <line x1="1050" y1="155" x2="1150" y2="155"/>
+      <line x1="1050" y1="180" x2="1150" y2="180"/>
+    </g>
+    <polygon points="1050,55 1100,40 1150,55" fill="#fcd34d" stroke="#d97706" stroke-width="2"/>
+    <rect x="1090" y="180" width="20" height="20" fill="#d97706" opacity="0.6"/>
+  </g>
+
+  <!-- Ground horizon -->
+  <rect x="0" y="200" width="1200" height="20" fill="url(#ground)"/>
+  <line x1="0" y1="200" x2="1200" y2="200" stroke="#64748b" stroke-width="1" opacity="0.5"/>
+</svg>
 
 </div>
 
----
-layout: center
----
-
-<div class="max-w-4xl mx-auto">
-
-<div class="text-center mb-4">
-  <div i-carbon:data-refinery class="text-5xl text-green-500" />
-</div>
-
-# Walkthru Data
-
-<div class="text-center text-lg text-gray-600 mb-4">
-  A <strong>conda-forge style registry</strong> for public data pipelines
-</div>
-
-<div class="grid grid-cols-3 gap-3">
-
-<div class="rounded-lg border-2 p-3 border-green-400 bg-green-50 text-center">
-  <div i-carbon:code-branch class="text-2xl text-green-500 mx-auto" />
-  <div class="mt-1 font-semibold text-sm text-green-700">Git-Based</div>
-  <div class="text-xs text-gray-500">PR workflow for governance</div>
-</div>
-
-<div class="rounded-lg border-2 p-3 border-amber-400 bg-amber-50 text-center">
-  <div i-carbon:terminal class="text-2xl text-amber-500 mx-auto" />
-  <div class="mt-1 font-semibold text-sm text-amber-700">Simple SQL</div>
-  <div class="text-xs text-gray-500">DuckDB + DuckLake</div>
-</div>
-
-<div class="rounded-lg border-2 p-3 border-blue-400 bg-blue-50 text-center">
-  <div i-carbon:money class="text-2xl text-blue-500 mx-auto" />
-  <div class="mt-1 font-semibold text-sm text-blue-700">98% Cheaper</div>
-  <div class="text-xs text-gray-500">Ephemeral runners</div>
-</div>
-
-</div>
-
-<div class="mt-4 p-4 rounded-xl border-2 border-amber-400 bg-amber-50">
-  <div class="flex items-start gap-3">
-    <div i-carbon:construction class="text-3xl text-amber-500 flex-shrink-0" />
-    <div>
-      <div class="font-bold text-amber-700">Work in Progress — We Need Help</div>
-      <div class="text-sm text-gray-600 mt-1">
-        This is a <strong>hard infrastructure challenge</strong> that requires significant effort.
-        It's currently blocking our <strong>50+ Hormones & Cities indices</strong> from going live.
-      </div>
-      <div class="text-xs text-gray-500 mt-2 flex items-center gap-1">
-        <div i-carbon:time class="text-amber-500" />
-        Looking for contributors, sponsors, and partners
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="mt-3">
-
-```mermaid {scale: 0.5}
-flowchart LR
-    A[fa:fa-users Community] -->|Submit PR| B[fa:fa-code-branch GitHub]
-    B -->|CI Validates| C[fa:fa-server Hetzner Runner]
-    C -->|DuckDB SQL| D[fa:fa-database DuckLake]
-    D -->|Open Format| E[fa:fa-cloud S3 / source.coop]
-    E -->|Query| F[fa:fa-globe Anyone]
-    style A fill:#d1fae5,stroke:#059669
-    style E fill:#e0e7ff,stroke:#6366f1
-    style F fill:#fef3c7,stroke:#d97706
-```
-
-</div>
-
+<div class="text-center text-base mt-3" style="color: hsl(158 64% 30%)">
+Urban health data is most useful when <strong>everyone</strong> can act on it. One platform, one map, every actor.
 </div>
 
 ---
@@ -1114,7 +767,7 @@ layout: center
 
 <img src="/icon.svg" class="h-20 mx-auto mb-4" />
 
-# Join the Path
+# Join Us
 
 <div class="mt-6 grid grid-cols-3 gap-4 max-w-xl">
 
@@ -1135,7 +788,7 @@ layout: center
 <div class="rounded-lg border-2 border-solid p-3 backdrop-blur bg-opacity-10 border-blue-500 bg-blue-50">
   <a href="https://github.com/walkthru-earth" target="_blank" class="no-underline text-inherit block">
     <div i-carbon:logo-github class="text-2xl text-blue-500 mx-auto" />
-    <div class="mt-1 text-xs font-medium">Follow the Journey</div>
+    <div class="mt-1 text-xs font-medium">Contribute on GitHub</div>
   </a>
 </div>
 
@@ -1184,7 +837,7 @@ layout: center
   </div>
   <div class="mt-4 text-center">
     <div class="text-lg font-semibold" style="color: hsl(158 64% 42%)">Scan to Connect</div>
-    <div class="text-sm text-gray-500">All links + these slides</div>
+    <div class="text-sm text-gray-500">All links and these slides</div>
   </div>
 </div>
 
