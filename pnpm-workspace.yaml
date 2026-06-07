@@ -1,3 +1,15 @@
 packages:
   - "packages/**"
   - "!dist/**"
+
+allowBuilds:
+  core-js: false
+  esbuild: true
+  playwright-chromium: true
+
+# Pin Vite to 7.x. Slidev 52.16.0 hard-requires Vite 8, but its Vite 8 build breaks
+# public-folder assets imported by absolute path, e.g. /icon.svg (slidevjs/slidev#2616).
+# So @slidev/cli and @slidev/client are pinned to 52.15.1 in package.json, which needs
+# Vite 7. Drop both pins once Slidev ships a Vite 8 fix for #2616.
+overrides:
+  vite: ^7.3.3

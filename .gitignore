@@ -4,3 +4,4 @@ dist/
 *.local
 .DS_Store
 .env
+packages/walkthru-earth-auc-p1/research/

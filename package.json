@@ -3,7 +3,7 @@
   "type": "module",
   "version": "1.0.0",
   "private": true,
-  "packageManager": "pnpm@10.11.0",
+  "packageManager": "pnpm@11.5.2",
   "description": "WalkThru Earth Presentations",
   "scripts": {
     "cleanup:dist": "rimraf --glob dist",
@@ -14,8 +14,8 @@
   "devDependencies": {
     "@antfu/eslint-config": "^7.7.3",
     "@antfu/ni": "^28.3.0",
-    "@slidev/cli": "^52.15.1",
-    "@slidev/client": "^52.15.1",
+    "@slidev/cli": "52.15.1",
+    "@slidev/client": "52.15.1",
     "@slidev/theme-default": "latest",
     "@slidev/theme-seriph": "latest",
     "@slidev/types": "52.14.1",
