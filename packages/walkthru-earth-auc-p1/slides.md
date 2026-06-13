@@ -119,6 +119,18 @@ src: ./pages/who-benefits.md
 ---
 
 ---
+src: ./pages/persona-you.md
+---
+
+---
+src: ./pages/who-benefits.md
+---
+
+---
+src: ./pages/neurodivergent-focus.md
+---
+
+---
 src: ./pages/how-we-do-it.md
 ---
 

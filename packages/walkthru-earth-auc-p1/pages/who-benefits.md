@@ -58,9 +58,11 @@ We turn open data into <strong>actionable insights</strong> for everyone
 
 <!-- Center, the individual -->
 <Reveal :delay="240" class="text-center shrink-0">
-  <div class="rounded-full w-44 h-44 mx-auto flex items-center justify-center bg-gradient-to-br from-green-100 to-amber-100 border-4 border-green-500 shadow-lg">
-    <div i-carbon:user class="text-8xl text-green-600"/>
-  </div>
+  <Morph name="vt-you">
+    <div class="rounded-full w-44 h-44 mx-auto flex items-center justify-center bg-gradient-to-br from-green-100 to-amber-100 border-4 border-green-500 shadow-lg">
+      <div i-carbon:user class="text-8xl text-green-600"/>
+    </div>
+  </Morph>
   <div class="mt-3 font-bold text-3xl" style="color: hsl(158 64% 42%)">You</div>
   <div class="text-lg text-gray-600 max-w-56 mx-auto leading-tight">
     Know what your city is doing to <strong>your health</strong>
