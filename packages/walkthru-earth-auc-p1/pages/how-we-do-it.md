@@ -1,40 +1,31 @@
 ---
-zoom: 1.2
+layout: full
 ---
 
-# How we do it
+<div class="h-full w-full px-8 py-5 flex flex-col bg-gradient-to-br from-slate-50 via-white to-green-50">
 
-<div class="mt-4 px-10">
+  <div class="shrink-0 text-center">
+    <div class="text-4xl font-bold text-gray-800">How we do it</div>
+    <Reveal class="text-lg text-gray-500 mt-1">
+      We work the whole open stack. At every layer we do not just use it, we help build it.
+    </Reveal>
+  </div>
 
-<Reveal class="text-center text-2xl text-gray-700 leading-relaxed mb-8 max-w-3xl mx-auto">
-We are building this <strong>either way</strong>. It is open, it is lean, and the first version already works.
-</Reveal>
-
-<div class="grid grid-cols-3 gap-4">
-  <Reveal :delay="80" class="rounded-xl border-2 border-green-300 bg-green-50 p-5 text-center">
-    <div i-carbon:rocket class="text-5xl text-green-600 mx-auto mb-3"/>
-    <div class="text-xl text-gray-700 leading-snug">Small team, fast steps, real products already live.</div>
-  </Reveal>
-  <Reveal :delay="160" class="rounded-xl border-2 border-blue-300 bg-blue-50 p-5 text-center">
-    <div i-carbon:money class="text-5xl text-blue-600 mx-auto mb-3"/>
-    <div class="text-xl text-gray-700 leading-snug">Low cost, open tools mean a small budget goes a long way.</div>
-  </Reveal>
-  <Reveal :delay="240" class="rounded-xl border-2 border-amber-300 bg-amber-50 p-5 text-center">
-    <div i-carbon:partnership class="text-5xl text-amber-600 mx-auto mb-3"/>
-    <div class="text-xl text-gray-700 leading-snug">A university partner helps us reach grants and do real science.</div>
-  </Reveal>
-</div>
-
-<Reveal :delay="320" class="mt-8 text-center text-lg text-gray-500">
-We have already shortlisted aligned funds to apply to together, shown on the partners and funding slide.
-</Reveal>
+  <div class="flex-grow flex items-center justify-center overflow-hidden">
+    <div class="shrink-0" style="transform: scale(0.93); transform-origin: center;">
+      <HowCircle/>
+    </div>
+  </div>
 
 </div>
 
 <!--
-How, honest and confident.
-- We will build this with or without funding, it is already moving.
-- Open and low cost, so money stretches far.
-- A university partner unlocks grants and gives the science real weight.
-- The shortlisted funds are on the partners and funding slide, the EPIC Air Quality Fund and the Youth Climate Justice Fund.
+How we do it, the open geospatial stack drawn as rings, core to edge.
+- At the center are open standards. We do not do this alone, it is a big community. We help shape them with OGC and Cloud-Native Geo, in the working groups and testbeds, early adopters of new specs.
+- Next, cloud-native formats, Parquet, Zarr, COG, PMTiles. Everything we publish is open by default.
+- Then the global grid index, DGGS with H3, S2, A5, so any layer joins any other.
+- Then catalogs and providers. We help build Portolan, our open catalog on STAC, Iceberg, and DuckLake, public on Source.coop with no keys.
+- Next ring, our apps and initiatives, Globe Explorer, OpenSensor.space, Hormones and Cities.
+- The outer ring is people and AI agents, open to everyone.
+- The logos inside each ring show the real tools. The line out of each ring says what we do there.
 -->
