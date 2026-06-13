@@ -39,6 +39,10 @@ src: ./pages/detail-globe.md
 ---
 
 ---
+src: ./pages/globe-data-flow.md
+---
+
+---
 src: ./pages/what-we-do.md
 ---
 
