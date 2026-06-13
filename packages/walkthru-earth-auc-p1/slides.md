@@ -127,7 +127,11 @@ src: ./pages/who-benefits.md
 ---
 
 ---
-src: ./pages/neurodivergent-focus.md
+src: ./pages/neurodivergent-autism.md
+---
+
+---
+src: ./pages/neurodivergent-adhd.md
 ---
 
 ---
