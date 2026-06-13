@@ -92,7 +92,7 @@ transition: view-transition
     </Reveal>
     <Reveal :delay="410" class="flex-1 rounded-xl border-2 border-solid border-green-400 bg-white p-2.5 flex flex-col min-w-0 min-h-0">
       <div class="flex items-center gap-2 mb-1.5 shrink-0">
-        <img src="/logos/duckdb.svg" alt="DuckDB" class="h-5 shrink-0" />
+        <img src="/logos/parquet.svg" alt="Apache Parquet" class="h-5 shrink-0" />
         <div class="font-bold text-green-700 text-base leading-tight">GeoParquet 2.0</div>
       </div>
       <div class="flex flex-col gap-1 text-[0.78rem] text-gray-700">
