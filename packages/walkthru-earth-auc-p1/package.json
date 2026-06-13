@@ -16,18 +16,18 @@
     "three": "^0.184.0"
   },
   "devDependencies": {
-    "@slidev/rough-notation": "^0.1.0",
     "@iconify-json/bi": "^1.2.7",
     "@iconify-json/carbon": "^1.2.23",
     "@iconify-json/devicon": "^1.2.62",
-    "@iconify-json/fluent": "^1.2.48",
+    "@iconify-json/fluent": "^1.2.49",
     "@iconify-json/icon-park-outline": "^1.2.4",
     "@iconify-json/logos": "^1.2.11",
     "@iconify-json/ph": "^1.2.2",
     "@iconify-json/ri": "^1.2.10",
-    "@iconify-json/simple-icons": "^1.2.85",
+    "@iconify-json/simple-icons": "^1.2.86",
     "@iconify-json/svg-spinners": "^1.2.4",
     "@iconify-json/twemoji": "^1.2.5",
+    "@slidev/rough-notation": "^0.1.0",
     "@types/three": "^0.184.1",
     "playwright-chromium": "^1.60.0"
   }
