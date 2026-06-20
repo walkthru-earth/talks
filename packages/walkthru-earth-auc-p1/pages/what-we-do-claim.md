@@ -21,10 +21,6 @@ and the <Mark type="underline" color="#f43f5e" :delay="600">hormones</Mark> of t
 
 </div>
 
-<Reveal :delay="400" class="mt-12 text-base text-gray-400 italic">
-At least, that is the dream.
-</Reveal>
-
 <!--
 The big, almost unbelievable claim, said with a straight face.
 - We measure the mood of a neighborhood, the feelings of a city, the hormones of its people.

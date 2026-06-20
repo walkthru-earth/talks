@@ -23,11 +23,11 @@ src: ./pages/who-we-are.md
 ---
 
 ---
-src: ./pages/why-we-do-it.md
+src: ./pages/what-we-do-claim.md
 ---
 
 ---
-src: ./pages/what-we-do-claim.md
+src: ./pages/why-we-do-it.md
 ---
 
 ---
@@ -71,23 +71,7 @@ src: ./pages/who-benefits.md
 ---
 
 ---
-src: ./pages/persona-families.md
----
-
----
-src: ./pages/who-benefits.md
----
-
----
-src: ./pages/persona-planners.md
----
-
----
-src: ./pages/who-benefits.md
----
-
----
-src: ./pages/persona-investors.md
+src: ./pages/persona-general.md
 ---
 
 ---
